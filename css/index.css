@@ -316,13 +316,13 @@ html, body {
 .updates-desc {
     display: inline-block;
     height: 100%;
-    width: 40%;
-    text-align: left;
+    width: 70%;
+    text-align: center;
 }
 
 .updates-desc-content {
     height: 100%;
-    width: 75%;
+    width: 100%;
     display: inline-block;
 }
 
@@ -333,11 +333,10 @@ html, body {
 
 .updates-title-box-content {
     height: auto;
-    width: 100%;
+    width: 50%;
     position: relative;
-    top: 50%;
-    transform: translateY(-50%) translateX(-40%);
     z-index: 6;
+    top:20%;
 }
 
 .updates-desc-box-content {
