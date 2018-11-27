@@ -107,7 +107,7 @@ function setServiceMenu(targetoption){
     case 1:window.scrollTo(0,startServices+10);break;
     case 2:window.scrollTo(0,startServices+perSection+10);break;
     case 3:window.scrollTo(0,startServices+perSection*2+10);break;
-    case 3:window.scrollTo(0,startServices+perSection*3+10);break;
+    case 4:window.scrollTo(0,startServices+perSection*3+10);break;
   }
   setTimeout(function(){
     buttonTakeOver = false;
