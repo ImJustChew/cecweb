@@ -208,7 +208,9 @@ a.pill-button:hover .pill-text,button.pill-button:hover .pill-text {
     opacity: 0;
 }
 
-
+.about-learn-more {
+  opacity: 0;
+}
 
 .about-image-box {
     height: 100%;
@@ -240,6 +242,7 @@ a.pill-button:hover .pill-text,button.pill-button:hover .pill-text {
 }
 
 .about-history {
+    opacity: 0;
     font-family: 'SFPro Semibold';
     font-size: 4rem;
     padding: 1.5rem 0;

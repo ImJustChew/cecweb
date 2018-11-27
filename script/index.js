@@ -64,6 +64,10 @@ $(window).on("scroll", function() {
       setTimeout(function() {
           $(".about-l3").css("z-index",5);
           $(".about-l3").addClass("fadeIn");
+          $(".about-history").addClass("fadeIn");
+          setTimeout(function() {
+              $(".about-learn-more").addClass("fadeIn");
+          },100);
       },300);
       initAbout = false;
     }
