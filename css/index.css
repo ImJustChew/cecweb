@@ -45,6 +45,14 @@ html, body {
     font-family: 'SFPro Bold';
     src: url("../fonts/SFProDisplay-Bold.ttf");
 }
+@font-face {
+    font-family: 'SFProText Regular';
+    src: url("../fonts/SFProText-Regular.ttf");
+}
+@font-face {
+    font-family: 'SFProText Semibold';
+    src: url("../fonts/SFProText-Semibold.ttf");
+}
 
 .fadeIn {
     transition: 0.4s;
@@ -77,6 +85,51 @@ html, body {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+}
+
+.pill-button {
+    text-decoration: none;
+    font-weight: 600;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 46px;
+    margin-top: 40px;
+    padding: 0 23px;
+    border-radius: 46px;
+    border: 2px solid black;
+    -webkit-transition: cubic-bezier(0.4, 0, 0.6, 1);
+    transition: cubic-bezier(0.4, 0, 0.6, 1);
+    cursor:pointer;
+}
+
+.pill-text{
+  font-size: 17px;
+  font-family: 'SFProText Regular';
+  color: black;
+  position:relative;
+}
+
+.pill-button .pill-text {
+    color: black;
+    -webkit-transition: 300ms color cubic-bezier(0.4, 0, 0.6, 1);
+    transition: 300ms color cubic-bezier(0.4, 0, 0.6, 1)
+}
+
+a.pill-button:hover,button.pill-button:hover {
+    background: black;
+    -webkit-transition: 300ms background cubic-bezier(0.4, 0, 0.6, 1);
+    transition: 300ms background cubic-bezier(0.4, 0, 0.6, 1);
+}
+
+a.pill-button:hover .pill-text,button.pill-button:hover .pill-text {
+    color: #FFF;
+    text-decoration: none;
+    -webkit-transition: 300ms color cubic-bezier(0.4, 0, 0.6, 1);
+    transition: 300ms color cubic-bezier(0.4, 0, 0.6, 1)
 }
 
 .home,.about,.achievements,.updates,.services,.contact {
