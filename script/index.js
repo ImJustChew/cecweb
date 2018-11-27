@@ -53,7 +53,7 @@ $(window).on("load", function() {
         setTimeout(function() {
             $(".home-desc").addClass("fadeIn");
         },1000);
-    },700);
+    },600);
 });
 
 $(window).on("scroll", function() {
@@ -128,74 +128,15 @@ function inputText(target,targettext,time) {
     },time);
 }
 
-// function setAboutMenu(targetoption){
-//   buttonTakeOver = true;
-//   changeAboutMenu(targetoption);
-//   var perSection = (endAbout - startAbout)/4;
-//   switch(targetoption){
-//     case 1:window.scrollTo(0,startAbout +100);break;
-//     case 2:window.scrollTo(0,startAbout+perSection +100);break;
-//     case 3:window.scrollTo(0,startAbout+perSection*2 +100);break;
-//     case 4:window.scrollTo(0,startAbout+perSection*3 +100);break;
-//   }
-//   setTimeout(function(){
-//     buttonTakeOver = false;
-//   },50);
-// }
-//
-// function changeAboutMenu(targetoption) {
-//     $(".op2").removeClass("aboutmenuoptionactive");
-//     $(".op3").removeClass("aboutmenuoptionactive");
-//     $(".op4").removeClass("aboutmenuoptionactive");
-//     $(".op1").removeClass("aboutmenuoptionactive");
-//     if (targetoption == 1) {
-//         $(".about-l2").removeClass("fadeIn");
-//         $(".about-l3").removeClass("fadeIn");
-//         $(".about-l4").removeClass("fadeIn");
-//         $(".op1").addClass("aboutmenuoptionactive");
-//         setTimeout(function() {
-//             $(".about-l1").css("z-index",5);
-//             $(".about-l1").addClass("fadeIn");
-//         },300);
-//     } else if (targetoption == 2) {
-//         $(".about-l1").removeClass("fadeIn");
-//         $(".about-l3").removeClass("fadeIn");
-//         $(".about-l4").removeClass("fadeIn");
-//         $(".op2").addClass("aboutmenuoptionactive");
-//         setTimeout(function() {
-//             $(".about-l2").css("z-index",5);
-//             $(".about-l2").addClass("fadeIn");
-//         },300);
-//     } else if (targetoption == 3) {
-//         $(".about-l1").removeClass("fadeIn");
-//         $(".about-l2").removeClass("fadeIn");
-//         $(".about-l4").removeClass("fadeIn");
-//         $(".op3").addClass("aboutmenuoptionactive");
-//         setTimeout(function() {
-//             $(".about-l3").css("z-index",5);
-//             $(".about-l3").addClass("fadeIn");
-//         },300);
-//     } else if (targetoption == 4) {
-//         $(".about-l1").removeClass("fadeIn");
-//         $(".about-l2").removeClass("fadeIn");
-//         $(".about-l3").removeClass("fadeIn");
-//         $(".op4").addClass("aboutmenuoptionactive");
-//         setTimeout(function() {
-//             $(".about-l4").css("z-index",5);
-//             $(".about-l4").addClass("fadeIn");
-//         },300);
-//     }
-// }
-
 function setServiceMenu(targetoption){
   buttonTakeOver = true;
   changeServicesMenu(targetoption);
   var perSection = (endServices - startServices)/4;
   switch(targetoption){
-    case 1:window.scrollTo(0,startServices);break;
-    case 2:window.scrollTo(0,startServices+perSection);break;
-    case 3:window.scrollTo(0,startServices+perSection*2);break;
-    case 3:window.scrollTo(0,startServices+perSection*3);break;
+    case 1:window.scrollTo(0,startServices+10);break;
+    case 2:window.scrollTo(0,startServices+perSection+10);break;
+    case 3:window.scrollTo(0,startServices+perSection*2+10);break;
+    case 3:window.scrollTo(0,startServices+perSection*3+10);break;
   }
   setTimeout(function(){
     buttonTakeOver = false;
