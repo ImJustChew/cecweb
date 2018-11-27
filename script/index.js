@@ -12,15 +12,6 @@ var ctrl = new ScrollMagic.Controller({
     }
 });
 
-var updatesscene;
-$(".updates").each(function() {
-    updatesscene = new ScrollMagic.Scene({
-        triggerElement: this,
-        duration: '100%'
-    })
-    .setPin(this)
-    .addTo(ctrl);
-});
 var servicescene;
 $(".services").each(function() {
     servicescene = new ScrollMagic.Scene({
@@ -32,15 +23,6 @@ $(".services").each(function() {
 });
 var startServices = servicescene.scrollOffset();
 var endServices = servicescene.scrollOffset() + servicescene.duration();
-var contactscene;
-$(".contact").each(function() {
-    contactscene = new ScrollMagic.Scene({
-        triggerElement: this,
-        duration: '100%'
-    })
-    .setPin(this)
-    .addTo(ctrl);
-});
 
 $(window).on("load", function() {
     scrollPosition = $(window).scrollTop();
@@ -66,7 +48,7 @@ $(window).on("scroll", function() {
           $(".about-l3").addClass("fadeIn");
           $(".about-history").addClass("fadeIn");
           setTimeout(function() {
-              $(".about-learn-more").addClass("fadeIn");
+              $(".about-learn-more").addClass("fadeIn ");
           },100);
       },300);
       initAbout = false;
@@ -81,22 +63,7 @@ $(window).on("scroll", function() {
       changeServicesMenu(1);
       initServices = false;
     }
-    // //About section listener
     if(!buttonTakeOver){
-    //   if(scrollPosition >= startAbout){
-    //     var perSection = (endAbout - startAbout)/4
-    //     if(scrollPosition >= startAbout + perSection*1){
-    //       if(scrollPosition >= startAbout + perSection*2){
-    //         if(scrollPosition >= startAbout + perSection*3){
-    //           changeAboutMenu(4);
-    //         }
-    //         else {changeAboutMenu(3);}
-    //       }
-    //       else { changeAboutMenu(2); }
-    //     }
-    //     else { changeAboutMenu(1); }
-    //   }
-      //Services section listener
       if(scrollPosition >= startServices){
         var perSection = (endServices - startServices)/4;
         if(scrollPosition >= startServices + perSection*1){

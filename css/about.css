@@ -1,0 +1,160 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: 'SFPro Regular';
+    font-size: 10px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    transition: 0.3s;
+}
+
+* {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+@font-face {
+    font-family: 'Product Sans Regular';
+    src: url("../fonts/Product-Sans-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Product Sans Bold';
+    src: url("../fonts/Product-Sans-Bold.ttf");
+}
+
+@font-face {
+    font-family: 'SFPro Regular';
+    src: url("../fonts/SFProDisplay-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'SFPro Semibold';
+    src: url("../fonts/SFProDisplay-Semibold.ttf");
+}
+@font-face {
+    font-family: 'SFPro Bold';
+    src: url("../fonts/SFProDisplay-Bold.ttf");
+}
+@font-face {
+    font-family: 'SFProText Regular';
+    src: url("../fonts/SFProText-Regular.ttf");
+}
+@font-face {
+    font-family: 'SFProText Semibold';
+    src: url("../fonts/SFProText-Semibold.ttf");
+}
+
+
+.fadeIn {
+    transition: 0.4s;
+    opacity: 1 !important;
+}
+
+.header {
+    text-align: left;
+    height: 15%;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 7;
+}
+
+.contents {
+    height: 100%;
+    width: 100%;
+    z-index: 6;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.header img {
+    margin-left: 5%;
+    height: 90%;
+    width: auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.pill-button {
+    text-decoration: none;
+    font-weight: 600;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 46px;
+    margin-top: 40px;
+    padding: 0 23px;
+    border-radius: 46px;
+    border: 2px solid black;
+    -webkit-transition: cubic-bezier(0.4, 0, 0.6, 1);
+    transition: cubic-bezier(0.4, 0, 0.6, 1);
+    cursor:pointer;
+}
+
+.pill-text{
+  font-size: 17px;
+  font-family: 'SFProText Regular';
+  color: black;
+  position:relative;
+}
+
+.pill-button .pill-text {
+    color: black;
+    -webkit-transition: 300ms color cubic-bezier(0.4, 0, 0.6, 1);
+    transition: 300ms color cubic-bezier(0.4, 0, 0.6, 1)
+}
+
+a.pill-button:hover,button.pill-button:hover {
+    background: black;
+    -webkit-transition: 300ms background cubic-bezier(0.4, 0, 0.6, 1);
+    transition: 300ms background cubic-bezier(0.4, 0, 0.6, 1);
+}
+
+a.pill-button:hover .pill-text,button.pill-button:hover .pill-text {
+    color: #FFF;
+    text-decoration: none;
+    -webkit-transition: 300ms color cubic-bezier(0.4, 0, 0.6, 1);
+    transition: 300ms color cubic-bezier(0.4, 0, 0.6, 1)
+}
+
+.title {
+  height: 50%;
+  width: 100%;
+  text-align: center;
+  background-color: #F5F5F5;
+  z-index: 1;
+  position: relative;
+}
+.title-text {
+  font-family: 'SFPro Semibold';
+  font-size: 6rem;
+  position: relative;
+  top:50%;
+  transform: translateY(-50%);
+  display: inline-block;
+}
+
+.about {
+  height: 100%;
+  width: 100%;
+  text-align: left;
+  background-color: #F5F5F5;
+  z-index: 1;
+  position: relative;
+}

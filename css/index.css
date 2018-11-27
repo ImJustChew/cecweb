@@ -146,6 +146,10 @@ a.pill-button:hover .pill-text,button.pill-button:hover .pill-text {
   background-color: #000000
 }
 
+.about-color {
+  background-image: linear-gradient(black, #F5F6F6);
+}
+
 .footer {
     height: 100%;
     width: 100%;

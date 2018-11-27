@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>About CEC</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" initial-scale="1"/>
+        <meta charset="utf-8"/>
+        <link rel="icon" href="./img/cec-logo overlay2.png"/>
+        <link rel="stylesheet" href="./css/about.css"/>
+        <link rel="stylesheet" href="./css/index.css"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css" rel="stylesheet">
+    </head>
+    <body class="body">
+        <div class="header">
+            <img src="./img/cec-logo-black.png"/>
+        </div>
+        <div class="contents">
+            <div class="title">
+              <div class="title-text">Our History</div>
+            </div>
+            <div class="about">
+                <div class="about-content">
+                  <div class="about-menu">
+                    <div class="about-menu-container">
+                        <div class="about-history">Created in 2014 by enthusiastic parents, CEC has been one of the most successful clubs in the schools history.</div>
+                        <a class="pill-button about-learn-more">
+                          <span class="pill-text">Learn more</span>
+                        </a>
+                    </div>
+                  </div>
+                  <div class="about-image">
+                      <div class="about-image-box">
+                          <div class="about-image-layers">
+                              <div class="about-l3"></div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+            </div>
+            <div class="footer"></div>
+        </div>
+        <div class="footer-box">
+            <div class="footer-box-container">
+                <img src="./img/cec-logo-white.png"/>
+                <div class="footer-content-1">
+                    CREATIVE ELECTRONICS CLUB
+                </div>
+                <div class="footer-content-2">
+                    SPONSORED BY A LOT OF VERY GOOD PEOPLE
+                </div>
+                <div class="footer-content-3">
+                    DESIGN TOTALLY NOT STOLEN.
+                </div>
+                <div class="footer-content-links">
+                    <a href="https://www.facebook.com/clphscec/" target="_blank"><img src="./img/FACEBOOK.svg"/></a>
+                    <a href="mailto:cec.clphs@gmail.com" target="_blank"><img class="invert" src="./img/MAIL.svg"/></a>
+                </div>
+            </div>
+        </div>
+        <script src="https://www.gstatic.com/firebasejs/5.5.9/firebase.js"></script>
+        <script>
+          var config = {
+            authDomain: "cecdbfirebase.firebaseapp.com",
+            databaseURL: "https://cecdbfirebase.firebaseio.com",
+            projectId: "cecdbfirebase"
+          };
+          firebase.initializeApp(config);
+          var database = firebase.database();
+          var activities = [];
+          firebase.database().ref('activity/').once('value').then(function(snapshot) {
+            activities = snapshot.val();
+            console.log(activities);
+          });
+        </script>
+        <script src="./script/ScrollMagic.min.js"></script>
+        <script src="./script/debug.addIndicators.min.js"></script>
+        <script src="./script/index.js"></script>
+    </body>
+</html>
