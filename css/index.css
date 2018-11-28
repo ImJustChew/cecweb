@@ -339,6 +339,21 @@ a.pill-button:hover .pill-text,button.pill-button:hover .pill-text {
   font-size: 4rem;
 }
 
+.achievements-left-total {
+  font-family: "SFPro Semibold";
+  margin-top:10%;
+  font-size: 4rem;
+  display: inline-block;
+}
+
+.achievements-left-total-num {
+  font-family: "SFPro Semibold";
+  margin-top:10%;
+  margin-right:2%;
+  font-size: 6rem;
+  display:inline-block;
+}
+
 .achievements-right {
     height: 100%;
     width: 50%;
