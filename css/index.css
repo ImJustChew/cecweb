@@ -132,15 +132,7 @@ a.pill-button:hover .pill-text,button.pill-button:hover .pill-text {
     transition: 300ms color cubic-bezier(0.4, 0, 0.6, 1)
 }
 
-.home,.about,.goal,.updates,.services,.contact {
-    height: 100%;
-    width: 100%;
-    text-align: left;
-    background-color: #F5F5F5;
-    z-index: 1;
-    position: relative;
-}
-.home,.about,.goal,.updates,.services,.contact {
+.home,.about,.goal,.updates,.services,.contact,.achievements {
     height: 100%;
     width: 100%;
     text-align: left;
@@ -324,6 +316,54 @@ a.pill-button:hover .pill-text,button.pill-button:hover .pill-text {
   -webkit-text-fill-color: transparent;
 }
 
+.achievements-content {
+    height: 70%;
+    width: 80%;
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.achievements-left {
+    height: 100%;
+    width: 40%;
+    text-align: left;
+    vertical-align: top;
+    display:inline-block;
+}
+
+.achievements-left-text {
+  font-family: "SFPro Semibold";
+  font-size: 4rem;
+}
+
+.achievements-right {
+    height: 100%;
+    width: 50%;
+    text-align: left;
+    vertical-align: top;
+    display:inline-block;
+}
+
+.achievements-list-item {
+  height:30%;
+  width: 100%;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.list-title {
+  font-family: "SFPro Semibold";
+  font-size: 2.5rem;
+}
+
+.list-desc {
+  font-family: "SFPro Regular";
+  font-size: 2rem;
+}
+
 .updates-image-box {
     height: 100%;
     width: 80%;
@@ -463,9 +503,10 @@ a.pill-button:hover .pill-text,button.pill-button:hover .pill-text {
     position: absolute;
     top: 0;
     left: 0;
-    background: url("../img/laser_cutter_q.jpg");
+    background-image: url("../img/Laser-Cutter.png");
     background-position: center;
-    background-size: cover;
+    background-repeat: no-repeat;
+    background-size:contain;
 }
 
 .services-l2 {
@@ -475,9 +516,10 @@ a.pill-button:hover .pill-text,button.pill-button:hover .pill-text {
     position: absolute;
     top: 0;
     left: 0;
-    background: url("../img/3d_printer.jpg");
+    background-image: url("../img/3D-Printer.png");
     background-position: center;
-    background-size: cover;
+    background-repeat: no-repeat;
+    background-size:contain;
 }
 
 .services-l3 {
