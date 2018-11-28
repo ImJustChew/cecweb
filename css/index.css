@@ -132,7 +132,15 @@ a.pill-button:hover .pill-text,button.pill-button:hover .pill-text {
     transition: 300ms color cubic-bezier(0.4, 0, 0.6, 1)
 }
 
-.home,.about,.achievements,.updates,.services,.contact {
+.home,.about,.goal,.updates,.services,.contact {
+    height: 100%;
+    width: 100%;
+    text-align: left;
+    background-color: #F5F5F5;
+    z-index: 1;
+    position: relative;
+}
+.home,.about,.goal,.updates,.services,.contact {
     height: 100%;
     width: 100%;
     text-align: left;
@@ -233,7 +241,7 @@ a.pill-button:hover .pill-text,button.pill-button:hover .pill-text {
 .about-menu {
     display: inline-block;
     height: 100%;
-    width: 40%;
+    width: 30%;
     text-align: left;
 }
 
@@ -283,39 +291,37 @@ a.pill-button:hover .pill-text,button.pill-button:hover .pill-text {
     background-size:contain;
 }
 
-.achievements-content {
-  height: 100%;
-  width: 100%;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  text-align: center;
-}
-
-.slogan-text {
-    height: auto;
+.goal-content {
+    height: 70%;
     width: 100%;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 4rem;
     text-align: center;
-    letter-spacing: 1rem;
-    opacity: 0;
 }
 
-.slogan-text.activated {
-    transition: 1s;
-    letter-spacing: 0rem;
-    opacity: 1;
-}
-
-.updates-image {
-    height: 100%;
-    width: 50%;
-    text-align: right;
+.goal-content-text {
     display: inline-block;
-    vertical-align: top;
+    height: 100%;
+    width: 70%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: left;
+
+}
+
+.goal-text-nofill {
+  font-family: "SFPro Bold";
+  font-size: 5.5rem;
+}
+
+.goal-text {
+  font-family: "SFPro Bold";
+  font-size: 5.5rem;
+  background-image: url("../img/background-1121216_1280.jpg");
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .updates-image-box {
