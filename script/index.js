@@ -129,40 +129,32 @@ function changeServicesMenu(targetoption) {
         $(".services-l3").removeClass("fadeIn");
         $(".services-l4").removeClass("fadeIn");
         $(".service-desc-l1").removeClass("grey-out");
-        setTimeout(function() {
-            $(".services-l1").addClass("fadeIn");
-            $(".service-desc-l1").addClass("servicemenuoptionactive");
-        },300);
+        $(".services-l1").addClass("fadeIn");
+        $(".service-desc-l1").addClass("servicemenuoptionactive");
         break;
       case 2:
         $(".services-l1").removeClass("fadeIn");
         $(".services-l3").removeClass("fadeIn");
         $(".services-l4").removeClass("fadeIn");
         $(".service-desc-l2").removeClass("grey-out");
-        setTimeout(function() {
-            $(".services-l2").addClass("fadeIn");
-            $(".service-desc-l2").addClass("servicemenuoptionactive");
-        },300);
+        $(".services-l2").addClass("fadeIn");
+        $(".service-desc-l2").addClass("servicemenuoptionactive");
         break;
       case 3:
         $(".services-l1").removeClass("fadeIn");
         $(".services-l2").removeClass("fadeIn");
         $(".services-l4").removeClass("fadeIn");
         $(".service-desc-l3").removeClass("grey-out");
-        setTimeout(function() {
-            $(".services-l3").addClass("fadeIn");
-            $(".service-desc-l3").addClass("servicemenuoptionactive");
-        },300);
+        $(".services-l3").addClass("fadeIn");
+        $(".service-desc-l3").addClass("servicemenuoptionactive");
         break;
       case 4:
         $(".services-l1").removeClass("fadeIn");
         $(".services-l2").removeClass("fadeIn");
         $(".services-l3").removeClass("fadeIn");
         $(".service-desc-l4").removeClass("grey-out");
-        setTimeout(function() {
-            $(".services-l4").addClass("fadeIn");
-            $(".service-desc-l4").addClass("servicemenuoptionactive");
-        },300);
+        $(".services-l4").addClass("fadeIn");
+        $(".service-desc-l4").addClass("servicemenuoptionactive");
         break;
     }
 }
