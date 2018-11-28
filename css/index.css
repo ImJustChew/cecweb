@@ -311,10 +311,15 @@ a.pill-button:hover .pill-text,button.pill-button:hover .pill-text {
 
 }
 
+.goal-text-nofill {
+  font-family: "SFPro Bold";
+  font-size: 5.5rem;
+}
+
 .goal-text {
   font-family: "SFPro Bold";
   font-size: 5.5rem;
-  background-image: url("../img/background.jpg");
+  background-image: url("../img/background-1121216_1280.jpg");
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
