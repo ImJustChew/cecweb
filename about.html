@@ -27,7 +27,7 @@
                   In January 2014, Creative Electronics Club (CEC) was founded by a group of parents interested in electronics and maker education. So far, the CEC has six coaches who have background and experience in electronic engineering and creativity.
                 </div>
                 <div class="initial-desc-text">
-                  The purpose of the CEC was to inspire students' understanding of electronics, to promote a creative atmosphere, to stimulate students' potential on technology, science, engineering, and mathematics, and to lay bright future for students' future development. The course is based on the students' after-school hobbies. CEC is not a formal technical training class, CEC still focuses on the students' academics. The teaching method is to avoid using traditional words and theories to teach. The teaching methods are mainly based on physical internships to inspire students' interest in electronic creativity. 
+                  The purpose of the CEC was to inspire students' understanding of electronics, to promote a creative atmosphere, to stimulate students' potential on technology, science, engineering, and mathematics, and to lay bright future for students' future development. The course is based on the students' after-school hobbies. CEC is not a formal technical training class, CEC still focuses on the students' academics. The teaching method is to avoid using traditional words and theories to teach. The teaching methods are mainly based on physical internships to inspire students' interest in electronic creativity.
                 </div>
               </div>
             </div>
@@ -50,23 +50,5 @@
                 </div>
             </div>
         </div>
-        <script src="https://www.gstatic.com/firebasejs/5.5.9/firebase.js"></script>
-        <script>
-          var config = {
-            authDomain: "cecdbfirebase.firebaseapp.com",
-            databaseURL: "https://cecdbfirebase.firebaseio.com",
-            projectId: "cecdbfirebase"
-          };
-          firebase.initializeApp(config);
-          var database = firebase.database();
-          var activities = [];
-          firebase.database().ref('activity/').once('value').then(function(snapshot) {
-            activities = snapshot.val();
-            console.log(activities);
-          });
-        </script>
-        <script src="./script/ScrollMagic.min.js"></script>
-        <script src="./script/debug.addIndicators.min.js"></script>
-        <script src="./script/index.js"></script>
     </body>
 </html>
