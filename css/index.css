@@ -140,6 +140,14 @@ a.pill-button:hover .pill-text,button.pill-button:hover .pill-text {
     z-index: 1;
     position: relative;
 }
+.home,.about,.goal,.updates,.services,.contact {
+    height: 100%;
+    width: 100%;
+    text-align: left;
+    background-color: #F5F5F5;
+    z-index: 1;
+    position: relative;
+}
 
 .home-color {
   text-align: center;
