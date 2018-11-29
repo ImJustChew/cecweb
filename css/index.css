@@ -557,8 +557,13 @@ a.pill-button:hover .pill-text,button.pill-button:hover .pill-text {
     width: 90%;
     position: absolute;
     top: 0;
+<<<<<<< HEAD
     left: 10%;
     background: url("../img/Woodworking.jpg");
+=======
+    left: 0;
+    background: url("../img/woodworking.jpg");
+>>>>>>> eec54ea8dcb66a3318363d66796a4c391a1e08d4
     background-position: center;
     background-size: contain;
 }
@@ -568,10 +573,17 @@ a.pill-button:hover .pill-text,button.pill-button:hover .pill-text {
     width: 90%;
     position: absolute;
     top: 0;
+<<<<<<< HEAD
     left: 10%;
     background: url("../img/pcb.png");
     background-position: center;
     background-size: contain;
+=======
+    left: 0;
+    background: url("../img/pcb.png");
+    background-position:center;
+    background-size:contain;
+>>>>>>> eec54ea8dcb66a3318363d66796a4c391a1e08d4
     background-repeat: no-repeat;
 }
 
