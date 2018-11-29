@@ -53,11 +53,6 @@ $(window).on("scroll", function() {
       },300);
       initAbout = false;
     }
-    if ((scrollPosition >= $(".updates").offset().top / 2) && initUpdates) {
-      automatedUpdatesSlide();
-      nextUpdatesSlide();
-      initUpdates = false;
-    }
 
     if ((scrollPosition >= $(".services").offset().top / 2) && initServices) {
       changeServicesMenu(1);
@@ -157,52 +152,4 @@ function changeServicesMenu(targetoption) {
         $(".service-desc-l4").addClass("servicemenuoptionactive");
         break;
     }
-}
-
-var updateindex = 0;
-var updatetitle = ["ACTIVITY","COURSES","INFO"];
-var updatedescription = activities;
-function nextUpdatesSlide() {
-    updatedescription = activities;
-    if (updateindex == 2) {
-        updateindex = 0;
-        $(".updates-1").css("z-index",5);
-        $(".updates-2").css("z-index",4);
-        $(".updates-3").css("z-index",4);
-        $(".updates-1").addClass("updates-expand");
-        setTimeout(function() {
-            $(".updates-2").removeClass("updates-expand");
-            $(".updates-3").removeClass("updates-expand");
-        },800);
-    }
-    else if (updateindex == 0) {
-        updateindex = 1;
-        $(".updates-2").css("z-index",5);
-        $(".updates-1").css("z-index",4);
-        $(".updates-3").css("z-index",4);
-        $(".updates-2").addClass("updates-expand");
-        setTimeout(function() {
-            $(".updates-1").removeClass("updates-expand");
-            $(".updates-3").removeClass("updates-expand");
-        },800);
-    }
-    else if (updateindex == 1) {
-        updateindex = 2;
-        $(".updates-3").css("z-index",5);
-        $(".updates-1").css("z-index",4);
-        $(".updates-2").css("z-index",4);
-        $(".updates-3").addClass("updates-expand");
-        setTimeout(function() {
-            $(".updates-1").removeClass("updates-expand");
-            $(".updates-2").removeClass("updates-expand");
-        },800);
-    }
-    inputText(".updates-title-b",updatetitle[updateindex],40);
-    inputText(".updates-desc-box-content",updatedescription[updateindex],1);
-}
-
-function automatedUpdatesSlide() {
-    setInterval(function() {
-        nextUpdatesSlide();
-    },5000);
 }
