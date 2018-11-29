@@ -558,7 +558,7 @@ a.pill-button:hover .pill-text,button.pill-button:hover .pill-text {
     position: absolute;
     top: 0;
     left: 0;
-    background: url("../img/wood_tools.jpg");
+    background: url("../img/woodworking.jpg");
     background-position: center;
     background-size: cover;
 }
@@ -569,9 +569,10 @@ a.pill-button:hover .pill-text,button.pill-button:hover .pill-text {
     position: absolute;
     top: 0;
     left: 0;
-    background: url("../img/wood_tools.jpg");
-    background-position: center;
-    background-size: cover;
+    background: url("../img/pcb.png");
+    background-position:center;
+    background-size:contain;
+    background-repeat: no-repeat;
 }
 
 .visible {
