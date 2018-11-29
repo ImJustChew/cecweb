@@ -553,25 +553,26 @@ a.pill-button:hover .pill-text,button.pill-button:hover .pill-text {
 
 .services-l3 {
     opacity: 0;
-    height: 100%;
-    width: 100%;
+    height: 90%;
+    width: 90%;
     position: absolute;
     top: 0;
-    left: 0;
-    background: url("../img/wood_tools.jpg");
+    left: 10%;
+    background: url("../img/Woodworking.jpg");
     background-position: center;
-    background-size: cover;
+    background-size: contain;
 }
 .services-l4 {
     opacity: 0;
-    height: 100%;
-    width: 100%;
+    height: 90%;
+    width: 90%;
     position: absolute;
     top: 0;
-    left: 0;
-    background: url("../img/wood_tools.jpg");
+    left: 10%;
+    background: url("../img/pcb.png");
     background-position: center;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .visible {
