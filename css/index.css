@@ -561,6 +561,7 @@ a.pill-button:hover .pill-text,button.pill-button:hover .pill-text {
     background: url("../img/Woodworking.jpg");
     background-position: center;
     background-size: contain;
+    background-repeat: no-repeat;
 }
 .services-l4 {
     opacity: 0;
