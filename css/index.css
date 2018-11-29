@@ -500,6 +500,15 @@ a.pill-button:hover .pill-text,button.pill-button:hover .pill-text {
     opacity: 1;
 }
 
+.service-list-box {
+    display: table;
+    height:100%;
+    width:100%;
+}
+.service-list {
+    display: table-row;
+}
+
 .services-image {
     height: 100%;
     width: 55%;
@@ -570,14 +579,14 @@ a.pill-button:hover .pill-text,button.pill-button:hover .pill-text {
 }
 
 .services-desc-title {
-    height: 80%;
+    height: auto;
     width: 100%;
     /* opacity: 0.3; */
     text-align: left;
 }
 
 .services-desc-desc {
-    height: 20%;
+    height: auto;
     /* opacity: 0.3; */
     text-align: left;
 }
