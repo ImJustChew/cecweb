@@ -141,6 +141,15 @@ a.pill-button:hover .pill-text,button.pill-button:hover .pill-text {
     position: relative;
 }
 
+.achievements {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  background-color: #F5F5F5;
+  z-index: 1;
+  position: relative;
+}
+
 .home-color {
   text-align: center;
   background-color: #000000
@@ -294,7 +303,7 @@ a.pill-button:hover .pill-text,button.pill-button:hover .pill-text {
 
 .goal-content-text {
     display: inline-block;
-    height: 100%;
+    height: auto;
     width: 70%;
     position: relative;
     top: 50%;
@@ -407,6 +416,8 @@ a.pill-button:hover .pill-text,button.pill-button:hover .pill-text {
     display: table;
     height:100%;
     width:100%;
+    padding: 0;
+    text-align:left;
 }
 .service-list {
     display: table-row;

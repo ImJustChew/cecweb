@@ -21,8 +21,6 @@ $(".services").each(function() {
     .setPin(this)
     .addTo(ctrl);
 });
-var startServices = servicescene.scrollOffset();
-var endServices = servicescene.scrollOffset() + servicescene.duration();
 
 $(window).on("load", function() {
     scrollPosition = $(window).scrollTop();
@@ -39,6 +37,8 @@ $(window).on("load", function() {
 });
 
 $(window).on("scroll", function() {
+    var startServices = servicescene.scrollOffset();
+    var endServices = servicescene.scrollOffset() + servicescene.duration();
     scrollPosition = $(window).scrollTop();
     var progress = scrollPosition / totalHeight * 100;
     $(".progressbar-thumb").css("height",progress + "%");
@@ -95,6 +95,8 @@ function inputText(target,targettext,time) {
 }
 
 function setServiceMenu(targetoption){
+  var startServices = servicescene.scrollOffset();
+  var endServices = servicescene.scrollOffset() + servicescene.duration();
   buttonTakeOver = true;
   changeServicesMenu(targetoption);
   var perSection = (endServices - startServices)/4;
