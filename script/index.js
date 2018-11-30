@@ -54,8 +54,10 @@ $(window).on("scroll", function() {
       initAbout = false;
     }
 
-    if ((scrollPosition >= $(".services").offset().top / 2) && initServices) {
+    if ((scrollPosition >= $(".services").offset().top) && initServices) {
       changeServicesMenu(1);
+      $(".services-content-content").addClass("fadeIn");
+      $(".service-content-text").addClass("fadeOut");
       initServices = false;
     }
     if(!buttonTakeOver){

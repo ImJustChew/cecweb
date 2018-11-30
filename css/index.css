@@ -59,6 +59,11 @@ html, body {
     opacity: 1 !important;
 }
 
+.fadeOut {
+    transition: 0.4s;
+    opacity: 0 !important;
+}
+
 .header {
     text-align: left;
     height: 15%;
@@ -166,9 +171,18 @@ a.pill-button:hover .pill-text,button.pill-button:hover .pill-text {
     pointer-events: none;
 }
 
-.services-content,.contact-content {
+.contact-content {
     height: 70%;
     width: 90%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.services-content {
+    height: 70%;
+    width: 100%;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
@@ -393,11 +407,31 @@ a.pill-button:hover .pill-text,button.pill-button:hover .pill-text {
   font-size: 2rem;
 }
 
+.service-content-text {
+  font-family: "SFPro Bold";
+  font-size: 7rem;
+  background-image: url("../img/background-1121216_1280.jpg");
+  background-position: center;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  position: absolute;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.services-content-content {
+  opacity: 0;
+  height: 100%;
+  width:90%;
+}
+
 .services-desc {
     height: 100%;
     width: 45%;
     display: inline-block;
     vertical-align: top;
+    text-align: left;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
