@@ -27,7 +27,7 @@ $(window).on("load", function() {
     scrollPosition = $(window).scrollTop();
     var progress = scrollPosition / totalHeight * 100;
     $(".progressbar-thumb").css("height",progress + "%");
-    totalHeight = $(".about").height() + $(".goal").height() + $(".achievements").height() + $(".updates").height() + $(".services").height() + $(".contact").height() + $(".footer").height();
+    totalHeight = $(".home").height() + $(".about").height() + $(".goal").height() + $(".achievements").height() + $(".services").height() + $(".contact").height() + $(".footer").height();
     inputText(".home-title-a","SETTING A",40);
     setTimeout(function() {
         inputText(".home-title-b","NEW FRONTIER",40);
