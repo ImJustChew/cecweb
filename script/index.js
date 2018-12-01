@@ -1,10 +1,12 @@
 var scrollPosition = "";
 var totalHeight = "";
 var initAbout = true;
+var initAchievements = true;
 var initServices = true;
 var initUpdates = true;
 var serviceslocked = false;
 var buttonTakeOver = false;
+var jobstatus = false;
 
 var ctrl = new ScrollMagic.Controller({
     globalSceneOptions: {
@@ -74,6 +76,26 @@ $(window).on("scroll", function() {
     }
 
 });
+
+$(window).on("scroll", function() {
+    scrollPosition = $(window).scrollTop();
+    var progress = scrollPosition / totalHeight * 100;
+    $(".progressbar-thumb").css("height",progress + "%");
+    if ((scrollPosition >= $(".achievements").offset().top / 2) && initAchievements && jobstatus==false ) {
+		$('.count').each(function () {
+			$(this).prop('Counter',-2).animate({
+				Counter: $(this).text()
+			}, {
+				duration: 2000,
+				easing: 'swing',
+				step: function (now) {
+					$(this).text(Math.ceil(now));
+				}
+			});
+			jobstatus = true;
+		});
+	}
+})
 
 var textcount = 0;
 var texttyped = "";
