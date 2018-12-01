@@ -41,8 +41,6 @@ $(window).on("scroll", function() {
     var startServices = servicescene.scrollOffset();
     var endServices = servicescene.scrollOffset() + servicescene.duration();
     scrollPosition = $(window).scrollTop();
-    var progress = scrollPosition / totalHeight * 100;
-    $(".progressbar-thumb").css("height",progress + "%");
     if ((scrollPosition >= $(".about").offset().top / 1.5) && initAbout) {
           $(".about-l3").css("z-index",5);
           $(".about-l3").addClass("fadeIn");
@@ -52,6 +50,21 @@ $(window).on("scroll", function() {
           },100);
       initAbout = false;
     }
+
+    if ((scrollPosition >= $(".achievements").offset().top / 1.5) && !initAchievements ) {
+  		$('.achievements-left-total-num').each(function () {
+  			$(this).prop('Counter',-1).animate({
+  				Counter: $(this).text()
+  			}, {
+  				duration: 2000,
+  				easing: 'swing',
+  				step: function (now) {
+  					$(this).text(Math.ceil(now));
+  				}
+  			});
+  			initAchievements = true;
+  		});
+  	}
 
     if ((scrollPosition >= $(".services").offset().top) && initServices) {
       changeServicesMenu(1);
@@ -75,26 +88,6 @@ $(window).on("scroll", function() {
     }
 
 });
-
-$(window).on("scroll", function() {
-    scrollPosition = $(window).scrollTop();
-    var progress = scrollPosition / totalHeight * 100;
-    $(".progressbar-thumb").css("height",progress + "%");
-    if ((scrollPosition >= $(".achievements").offset().top / 2) && initAchievements==false ) {
-		$('.count').each(function () {
-			$(this).prop('Counter',-2).animate({
-				Counter: $(this).text()
-			}, {
-				duration: 2000,
-				easing: 'swing',
-				step: function (now) {
-					$(this).text(Math.ceil(now));
-				}
-			});
-			initAchievements = true;
-		});
-	}
-})
 
 var textcount = 0;
 var texttyped = "";
