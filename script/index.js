@@ -155,3 +155,10 @@ function changeServicesMenu(targetoption) {
         break;
     }
 }
+var clicked_times = 0;
+function notaneasteregg(){
+  clicked_times++;
+  if(clicked_times ==100){
+    inputText(".home-desc","魔鬼藏在细节中！",40);
+  }
+}
