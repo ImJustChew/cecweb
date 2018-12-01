@@ -42,15 +42,13 @@ $(window).on("scroll", function() {
     scrollPosition = $(window).scrollTop();
     var progress = scrollPosition / totalHeight * 100;
     $(".progressbar-thumb").css("height",progress + "%");
-    if ((scrollPosition >= $(".about").offset().top / 2) && initAbout) {
-      setTimeout(function() {
+    if ((scrollPosition >= $(".about").offset().top / 1.5) && initAbout) {
           $(".about-l3").css("z-index",5);
           $(".about-l3").addClass("fadeIn");
           $(".about-history").addClass("fadeIn");
           setTimeout(function() {
               $(".about-learn-more").addClass("fadeIn ");
           },100);
-      },300);
       initAbout = false;
     }
 
