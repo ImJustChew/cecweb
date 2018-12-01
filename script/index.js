@@ -28,7 +28,7 @@ $(window).on("load", function() {
     scrollPosition = $(window).scrollTop();
     var progress = scrollPosition / totalHeight * 100;
     $(".progressbar-thumb").css("height",progress + "%");
-    totalHeight = $(".about").height() + $(".slogan").height() + $(".updates").height() + $(".services").height() + $(".contact").height() + $(".footer").height();
+    totalHeight = $(".about").height() + $(".goal").height() + $(".achievements").height() + $(".updates").height() + $(".services").height() + $(".contact").height() + $(".footer").height();
     inputText(".home-title-a","SETTING A",40);
     setTimeout(function() {
         inputText(".home-title-b","NEW FRONTIER",40);
@@ -79,6 +79,26 @@ $(window).on("scroll", function() {
     }
 
 });
+
+
+$(window).on("scroll", function() {
+    scrollPosition = $(window).scrollTop();
+    var progress = scrollPosition / totalHeight * 100;
+    $(".progressbar-thumb").css("height",progress + "%");
+    if ((scrollPosition >= $(".achievements").offset().top / 2) && initAbout) {
+$('.count').each(function () {
+    $(this).prop('Counter',0).animate({
+        Counter: $(this).text()
+    }, {
+        duration: 2000,
+        easing: 'swing',
+        step: function (now) {
+            $(this).text(Math.ceil(now));
+        }
+    });
+});
+	}
+})
 
 var textcount = 0;
 var texttyped = "";
@@ -207,14 +227,3 @@ function automatedUpdatesSlide() {
     },5000);
 }
 
-$('.count').each(function () {
-    $(this).prop('Counter',0).animate({
-        Counter: $(this).text()
-    }, {
-        duration: 4000,
-        easing: 'swing',
-        step: function (now) {
-            $(this).text(Math.ceil(now));
-        }
-    });
-});
