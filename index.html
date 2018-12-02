@@ -12,8 +12,10 @@
     </head>
     <body class="body">
         <div class="header">
-            <img src="./img/cec-logo-white.png"/>
-
+            <img src="./img/cec-logo-white.png" class="cec-logo"/>
+            <a onclick="toastText(&quot;Someone is currently working very hard so you can access this feature&quot;,5000)" class="login-button" style="float:right">
+              <span class="login-text">Log in</span>
+            </a>
         </div>
         <div class="contents">
             <div class="home home-color">
@@ -236,6 +238,7 @@
                 </div>
             </div>
         </div>
+        <div id="snackbar"></div>
         <!-- <script src="https://www.gstatic.com/firebasejs/5.5.9/firebase.js"></script>
         <script>
           var config = {

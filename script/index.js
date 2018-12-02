@@ -176,3 +176,17 @@ function notaneasteregg(){
     inputText(".home-desc","魔鬼藏在细节中！",40);
   }
 }
+
+function toastText(toastMsg,timeout){
+    var cssfade = (timeout/1000)-0.5;
+    console.log(cssfade.toString());
+    $("#snackbar").text(toastMsg);
+    $("#snackbar").css("visibility","visible");
+    $("#snackbar").css("-webkit-animation","fadein 0.5s, fadeout 0.5s "+cssfade.toString()+"s");
+    $("#snackbar").css("animation","fadeout 0.5s "+cssfade.toString()+"s");
+    setTimeout(function(){
+      $("#snackbar").css("visibility","");
+      $("#snackbar").css("-webkit-animation","");
+      $("#snackbar").css("animation","");
+    }, timeout);
+}

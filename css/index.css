@@ -83,8 +83,9 @@ html, body {
     left: 0;
 }
 
-.header img {
+.cec-logo {
     margin-left: 5%;
+    margin-right: 5%;
     height: 90%;
     width: auto;
     position: relative;
@@ -132,6 +133,52 @@ a.pill-button:hover,button.pill-button:hover {
 
 a.pill-button:hover .pill-text,button.pill-button:hover .pill-text {
     color: #FFF;
+    text-decoration: none;
+    -webkit-transition: 300ms color cubic-bezier(0.4, 0, 0.6, 1);
+    transition: 300ms color cubic-bezier(0.4, 0, 0.6, 1)
+}
+
+.login-button {
+  margin-right: 5%;
+    text-decoration: none;
+    font-weight: 600;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 46px;
+    margin-top: 40px;
+    padding: 0 23px;
+    border-radius: 46px;
+    border: 2px solid white;
+    -webkit-transition: cubic-bezier(0.4, 0, 0.6, 1);
+    transition: cubic-bezier(0.4, 0, 0.6, 1);
+    cursor:pointer;
+}
+
+.login-text{
+  font-size: 17px;
+  font-family: 'SFProText Regular';
+  color: white;
+  position:relative;
+}
+
+.login-button .login-text {
+    color: white;
+    -webkit-transition: 300ms color cubic-bezier(0.4, 0, 0.6, 1);
+    transition: 300ms color cubic-bezier(0.4, 0, 0.6, 1)
+}
+
+a.login-button:hover,button.login-button:hover {
+    background: white;
+    -webkit-transition: 300ms background cubic-bezier(0.4, 0, 0.6, 1);
+    transition: 300ms background cubic-bezier(0.4, 0, 0.6, 1);
+}
+
+a.login-button:hover .login-text,button.login-button:hover .login-text {
+    color: black;
     text-decoration: none;
     -webkit-transition: 300ms color cubic-bezier(0.4, 0, 0.6, 1);
     transition: 300ms color cubic-bezier(0.4, 0, 0.6, 1)
@@ -698,4 +745,41 @@ a.pill-button:hover .pill-text,button.pill-button:hover .pill-text {
 .invert {
   -webkit-filter: invert(1);
    filter: invert(1);
+}
+
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: 25px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 16px;
+    position: fixed;
+    z-index: 9;
+    bottom: 30px;
+    font-size: 17px;
+}
+
+
+
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
 }
