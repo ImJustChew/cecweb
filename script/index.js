@@ -7,6 +7,16 @@ var initUpdates = true;
 var serviceslocked = false;
 var buttonTakeOver = false;
 
+var config = {
+  apiKey: "AIzaSyCpWeoGzDrwoJjnsjBnDu-vVUt6LfGHyxk",
+  authDomain: "cecdbfirebase.firebaseapp.com",
+  databaseURL: "https://cecdbfirebase.firebaseio.com",
+  projectId: "cecdbfirebase"
+};
+
+firebase.initializeApp(config);
+var database = firebase.database();
+
 var ctrl = new ScrollMagic.Controller({
     globalSceneOptions: {
         triggerHook: 'onLeave'
@@ -180,7 +190,6 @@ function notaneasteregg(){
 
 function toastText(toastMsg,timeout){
     var cssfade = (timeout/1000)-0.5;
-    console.log(cssfade.toString());
     $("#snackbar").text(toastMsg);
     $("#snackbar").css("visibility","visible");
     $("#snackbar").css("-webkit-animation","fadein 0.5s, fadeout 0.5s "+cssfade.toString()+"s");
