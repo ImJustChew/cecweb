@@ -240,8 +240,13 @@
         </div>
         <div id="snackbar"></div>
         <script src="./script/ScrollMagic.min.js"></script>
+        <script src="./script/jquery.fittext.js"></script>
         <script src="./script/debug.addIndicators.min.js"></script>
         <script src="https://www.gstatic.com/firebasejs/5.5.9/firebase.js"></script>
         <script src="./script/index.js"></script>
+        <script>
+          jQuery(".services-desc-title-text").fitText(1.4,{ minFontSize: '20px', maxFontSize: '40px' });
+          jQuery(".services-desc-desc-text").fitText(1.6,{ minFontSize: '1px', maxFontSize: '20px' });
+        </script>
     </body>
 </html>

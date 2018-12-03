@@ -595,7 +595,7 @@ a.login-button:hover .login-text,button.login-button:hover .login-text {
 .services-desc-title-text {
     font-family: 'SFPro Bold';
     height: auto;
-    width: auto;
+    width: 100%;
     margin-left: 15%;
     font-size: 5rem;
     display: inline-block;
@@ -606,6 +606,7 @@ a.login-button:hover .login-text,button.login-button:hover .login-text {
 
 .services-desc-desc-text {
     margin-left: 15%;
+    width: 100%;
     font-size: 2rem;
 }
 
