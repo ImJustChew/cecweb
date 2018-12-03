@@ -7,16 +7,6 @@ var initUpdates = true;
 var serviceslocked = false;
 var buttonTakeOver = false;
 
-var config = {
-  apiKey: "AIzaSyCpWeoGzDrwoJjnsjBnDu-vVUt6LfGHyxk",
-  authDomain: "cecdbfirebase.firebaseapp.com",
-  databaseURL: "https://cecdbfirebase.firebaseio.com",
-  projectId: "cecdbfirebase"
-};
-
-firebase.initializeApp(config);
-var database = firebase.database();
-
 var ctrl = new ScrollMagic.Controller({
     globalSceneOptions: {
         triggerHook: 'onLeave'
