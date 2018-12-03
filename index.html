@@ -13,7 +13,7 @@
     <body class="body">
         <div class="header">
             <img src="./img/cec-logo-white.png" class="cec-logo"/>
-            <a href="login.html" class="login-button" style="float:right">
+            <a onClick="checkLoginStatus()" class="login-button" style="float:right">
               <span class="login-text">Log in</span>
             </a>
         </div>
@@ -241,6 +241,7 @@
         <div id="snackbar"></div>
         <script src="./script/ScrollMagic.min.js"></script>
         <script src="./script/debug.addIndicators.min.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.5.9/firebase.js"></script>
         <script src="./script/index.js"></script>
     </body>
 </html>

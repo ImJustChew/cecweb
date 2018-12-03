@@ -7,6 +7,36 @@ var initUpdates = true;
 var serviceslocked = false;
 var buttonTakeOver = false;
 
+var config = {
+  apiKey: "AIzaSyCpWeoGzDrwoJjnsjBnDu-vVUt6LfGHyxk",
+  authDomain: "cecdbfirebase.firebaseapp.com",
+  databaseURL: "https://cecdbfirebase.firebaseio.com",
+  projectId: "cecdbfirebase"
+};
+
+firebase.initializeApp(config);
+
+firebase.auth().onAuthStateChanged(function(user) {
+  if (user) {
+    toastText("Welcome Back",5000);
+    $(".login-text").text("Log out");
+  } else {
+  }
+});
+
+function checkLoginStatus(){
+  var currentStatus = $(".login-text").text();
+  if(currentStatus.includes("Log out")){
+    firebase.auth().signOut().then(function() {
+            toastText("Log out Successful",5000);
+            $(".login-text").text("Log in");
+          }, function(error) {
+            toastText(error,5000);
+          });
+  }
+  else window.location.href = 'login.html';
+}
+
 var ctrl = new ScrollMagic.Controller({
     globalSceneOptions: {
         triggerHook: 'onLeave'
