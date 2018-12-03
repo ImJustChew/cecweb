@@ -680,6 +680,7 @@ a.login-button:hover .login-text,button.login-button:hover .login-text {
 .contact-title {
     font-size: 8rem;
     font-family: 'SFPro Bold';
+    width:100%;
 }
 
 .contact-desc {
