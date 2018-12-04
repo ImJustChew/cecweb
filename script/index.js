@@ -220,3 +220,16 @@ function toastText(toastMsg,timeout){
       $("#snackbar").css("animation","");
     }, timeout);
 }
+
+function latestClicked(clicked){
+  var extraHTML = "";
+  switch(clicked){
+    case 0:
+      extraHTML = "?post=10112018";
+    break;
+    case 1:
+      extraHTML = "?post=22092018";
+    break;
+  }
+  window.location.assign('achievements.html' + extraHTML);
+}
