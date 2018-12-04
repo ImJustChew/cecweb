@@ -9,6 +9,8 @@ html, body {
     color: black;
     text-align: center;
     transition: 0.3s;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 * {
