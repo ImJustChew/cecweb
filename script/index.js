@@ -231,5 +231,5 @@ function latestClicked(clicked){
       extraHTML = "?post=22092018";
     break;
   }
-  window.location.assign('achievements.html' + extraHTML);
+  window.location.assign('newsroom.html' + extraHTML);
 }
