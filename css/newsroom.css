@@ -276,20 +276,18 @@ a.pill-button:hover .pill-text,button.pill-button:hover .pill-text {
     margin: 0 1rem;
 }
 
-.latest-content_left {
+.latest-content_container {
   margin-top: 10px;
   margin-bottom: 10px;
   height:100%;
   width:45%;
+  margin-left: 10px;
   margin-right: 10px;
-  background-image: linear-gradient(rgba(0, 0, 0, 1),rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.0)),url("../img/latest_1.jpg");
-  background-position: center;
-  background-size: contain;
   display:inline-block;
   transition: transform .2s;
 
 }
-.latest-content_left:hover {
+.latest-content_container:hover {
     transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
@@ -309,21 +307,4 @@ a.pill-button:hover .pill-text,button.pill-button:hover .pill-text {
   color: white;
   text-align: center;
   display:inline-block;
-}
-
-.latest-content_right {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  height:100%;
-  width:45%;
-  margin-left: 10px;
-  background-image: linear-gradient(rgba(0, 0, 0, 1),rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.0)),url("../img/latest_2.jpg");
-  background-position: center;
-  background-size: cover;
-  display:inline-block;
-  transition: transform .2s;
-}
-
-.latest-content_right:hover {
-    transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
