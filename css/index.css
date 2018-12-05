@@ -349,7 +349,7 @@ a.login-button:hover .login-text,button.login-button:hover .login-text {
     z-index: 3;
     opacity: 0;
     transition: 0.3s;
-    background-image: url("../img/cec-robot.png");
+    background-image: url("../img/cec-logo_overlay2.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size:contain;
