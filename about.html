@@ -6,6 +6,7 @@
         <meta charset="utf-8"/>
         <link rel="icon" href="./img/cec-logo_overlay2.png"/>
         <link rel="stylesheet" href="./css/about.css"/>
+		<script src="./script/about.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
         <link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css" rel="stylesheet">
@@ -33,7 +34,7 @@
 					<div id="multilang-container" class="multilang-container">
 					
 						<div id="en" class="en-container">
-						<div class="initial-container-title">
+						<div class="initial-container-title" onclick="changelang(1)">
 						Club's Aim
 						</div>
 							<div class="initial-container-text-title">
@@ -95,7 +96,7 @@
 							</div>
 						</div>
 						<div id="zh" class="zh-container" style="display: none" >
-						<div class="initial-container-title">
+						<div class="initial-container-title" onclick="changelang(2)" >
 						宗旨
 						</div>	
 							<div class="initial-container-text-title">
@@ -157,7 +158,7 @@
 							</div>
 						</div>
 						<div id="jp" class="jp-container" style="display: none" >
-						<div class="initial-container-title">
+						<div class="initial-container-title" onclick="changelang(3)">
 						目的
 						</div>	
 							<div class="initial-container-text-title">
@@ -219,7 +220,7 @@
 							</div>
 						</div>
 						<div id="de" class="de-container" style="display: none" >
-						<div class="initial-container-title">
+						<div class="initial-container-title" onclick="changelang(4)">
 						Zweck
 						</div>	
 							<div class="initial-container-text-title">

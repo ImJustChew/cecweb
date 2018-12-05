@@ -1,22 +1,16 @@
-$(function() {
-  // Handler for .ready() called.
-
-  
-   $('#home').click(function(e){    
-    $('#home-container, #torrents-container, #contact-container').fadeOut('slow', function(){
-        $('#home-container').fadeIn('slow');
-    });
-});
-
-  $('#torrents').click(function(e){    alert("rot");
-       $('#home-container, #torrents-container, #contact-container').fadeOut('slow', function(){
-           $('#torrents-container').fadeIn('slow');
-       });
-   });
-
-    $('#contact').click(function(e){    
-         $('#home-container, #torrents-container, #contact-container').fadeOut('slow', function(){
-            $('#contact-container').fadeIn('slow');
-        });
-    });
- });
+function changelang(lang) {
+		switch (lang) {
+			case 1: 
+				$('en').fadeOut('slow', function(){ $('zh').fadeIn('slow');   });
+				break;
+			case 2: 
+				$('zh').fadeOut('slow', function(){ $('jp').fadeIn('slow');   });
+				break;
+			case 3: 
+				$('jp').fadeOut('slow', function(){ $('de').fadeIn('slow');   });
+				break;
+			case 4: 
+				$('de').fadeOut('slow', function(){ $('en').fadeIn('slow');   });
+				break;
+		}
+};
