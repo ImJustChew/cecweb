@@ -267,23 +267,28 @@ a.pill-button:hover .pill-text,button.pill-button:hover .pill-text {
 }
 
 .logo-container{
-	height: 1280px;
-	width:720px;
+  width: 50%;
+  height: 480px;
 	z-index: 2;
+	margin-left: auto;
+    margin-right: auto;
 }
 
 .overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: transparent;
-  overflow: hidden;
-  -webkit-transform: scale(0);
-  -ms-transform: scale(0);
-  transform: scale(0);
-  -webkit-transition: .3s ease;
-  transition: .3s ease;
+	  position: absolute;
+	  bottom: 0;
+	  left: 0;
+	  right: 0;
+	  background-color: #F7F7F7;
+	  overflow: hidden;
+	  -webkit-transform: scale(0);
+	  -ms-transform: scale(0);
+	  transform: scale(0);
+	  -webkit-transition: .3s ease;
+	  transition: .3s ease;
+	  margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
 .logo-container:hover .overlay {
@@ -292,13 +297,8 @@ a.pill-button:hover .pill-text,button.pill-button:hover .pill-text {
   transform: scale(1);
 }
 
-.about-l3 {
-    color: black;
-    background-color: transparent;
-    opacity: 0;
-    transition: 0.3s;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size:contain;
+.image {
+	  width: 640px;
+  height: 480px;
 	display: block;
 }
