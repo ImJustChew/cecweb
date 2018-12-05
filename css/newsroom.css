@@ -158,7 +158,7 @@ a.pill-button:hover .pill-text,button.pill-button:hover .pill-text {
 }
 
 .description {
-  height: 100%;
+  height: 230%;
   width: 100%;
   text-align: center;
   background-color: #F7F7F7;
@@ -279,8 +279,8 @@ a.pill-button:hover .pill-text,button.pill-button:hover .pill-text {
 .latest-content_container {
   margin-top: 10px;
   margin-bottom: 10px;
-  height:100%;
-  width:45%;
+  height:691px;
+  width:678px;
   margin-left: 10px;
   margin-right: 10px;
   display:inline-block;
