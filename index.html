@@ -4,7 +4,7 @@
         <title>Creative Electronics Club</title>
         <meta name="viewport" content="width=device-width,initial-scale=1.0" initial-scale="1"/>
         <meta charset="utf-8"/>
-        <link rel="icon" href="./img/cec-logo overlay2.png"/>
+        <link rel="icon" href="./img/cec-logo_overlay2.png"/>
         <link rel="stylesheet" href="./css/index.css"/>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
@@ -13,7 +13,7 @@
     <body class="body">
         <div class="header">
             <img src="./img/cec-logo-white.png" class="cec-logo"/>
-            <a href="login.html" class="login-button" style="float:right">
+            <a onClick="checkLoginStatus()" class="login-button" style="float:right">
               <span class="login-text">Log in</span>
             </a>
         </div>
@@ -181,6 +181,20 @@
                   </div>
                 </div>
             </div>
+            <div class="latest">
+              <div class="latest-content">
+                <div class="latest-container-box">
+                  <div onclick="latestClicked(0)" class="latest-content_left">
+                    <div class="content-title">Big Hall Clock</div>
+                    <div class="content-desc">10 November 2018</div>
+                  </div>
+                  <div onclick="latestClicked(1)" class="latest-content_right">
+                    <div class="content-title">Makeathon Northern Malaysia</div>
+                    <div class="content-desc">22nd September 2018</div>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="contact">
                 <div class="contact-content">
                     <div class="contact-left">
@@ -230,7 +244,7 @@
                     SPONSORED BY A LOT OF AWESOME INDIVIDUALS
                 </div>
                 <div class="footer-content-3">
-                    DESIGN BY CEC OFFICIAL
+                <a style="color:white;" href="contribute.html">DESIGN BY CEC OFFICIAL</a>
                 </div>
                 <div class="footer-content-links">
                     <a href="https://www.facebook.com/clphscec/" target="_blank"><img src="./img/FACEBOOK.svg"/></a>
@@ -240,7 +254,19 @@
         </div>
         <div id="snackbar"></div>
         <script src="./script/ScrollMagic.min.js"></script>
+        <script src="./script/jquery.fittext.js"></script>
         <script src="./script/debug.addIndicators.min.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.5.9/firebase.js"></script>
         <script src="./script/index.js"></script>
+        <script>
+          jQuery(".services-desc-title-text").fitText(1.4,{ minFontSize: '20px', maxFontSize: '40px' });
+          jQuery(".services-desc-desc-text").fitText(1.6,{ minFontSize: '1px', maxFontSize: '20px' });
+          jQuery(".goal-text").fitText(1,{ minFontSize: '30px', maxFontSize: '60px' });
+          jQuery(".contact-title").fitText(0.4,{ minFontSize: '40px', maxFontSize: '75px' });
+          jQuery(".contact-desc").fitText(1.3,{ minFontSize: '10px', maxFontSize: '20px' });
+          jQuery(".contact-address").fitText(1.3,{ minFontSize: '14px', maxFontSize: '24px' });
+          jQuery(".content-title").fitText(3.3,{ minFontSize: '35px', maxFontSize: '50px' });
+          jQuery(".content-desc").fitText(1.5,{ minFontSize: '15px', maxFontSize: '30px' });
+        </script>
     </body>
 </html>

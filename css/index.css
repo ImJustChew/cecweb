@@ -9,6 +9,8 @@ html, body {
     color: black;
     text-align: center;
     transition: 0.3s;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 * {
@@ -184,7 +186,7 @@ a.login-button:hover .login-text,button.login-button:hover .login-text {
     transition: 300ms color cubic-bezier(0.4, 0, 0.6, 1)
 }
 
-.home,.about,.goal,.services,.contact {
+.home,.about,.goal,.services,.contact,.latest {
     height: 100%;
     width: 100%;
     text-align: left;
@@ -596,7 +598,7 @@ a.login-button:hover .login-text,button.login-button:hover .login-text {
 .services-desc-title-text {
     font-family: 'SFPro Bold';
     height: auto;
-    width: auto;
+    width: 100%;
     margin-left: 15%;
     font-size: 5rem;
     display: inline-block;
@@ -607,6 +609,7 @@ a.login-button:hover .login-text,button.login-button:hover .login-text {
 
 .services-desc-desc-text {
     margin-left: 15%;
+    width: 100%;
     font-size: 2rem;
 }
 
@@ -627,6 +630,68 @@ a.login-button:hover .login-text,button.login-button:hover .login-text {
     display: inline-block;
     vertical-align: top;
     border-radius: 0.5rem;
+}
+
+.latest-content {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.latest-container-box {
+  height:70%;
+  width:90%;
+  display:inline-block;
+  text-align: center;
+  transform: translateY(25%);
+}
+
+.latest-content_left {
+  height:100%;
+  width:45%;
+  margin-right: 10px;
+  background-image: linear-gradient(rgba(0, 0, 0, 1),rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.0)),url("../img/latest_1.jpg");
+  background-position: center;
+  background-size: contain;
+  display:inline-block;
+  transition: transform .2s;
+
+}
+.latest-content_left:hover {
+    transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.content-title {
+  width:100%;
+  font-family: "SFPro Semibold";
+  font-size: 50px;
+  color: white;
+  text-align: center;
+  display:inline-block;
+  margin-top: 50px;
+}
+.content-desc {
+  font-family: "SFPro Regular";
+  font-size: 30px;
+  margin-top: 30px;
+  color: white;
+  text-align: center;
+  display:inline-block;
+}
+
+.latest-content_right {
+  height:100%;
+  width:45%;
+  margin-left: 10px;
+  background-image: linear-gradient(rgba(0, 0, 0, 1),rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.0)),url("../img/latest_2.jpg");
+  background-position: center;
+  background-size: cover;
+  display:inline-block;
+  transition: transform .2s;
+}
+
+.latest-content_right:hover {
+    transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 .contact-left {
@@ -680,6 +745,7 @@ a.login-button:hover .login-text,button.login-button:hover .login-text {
 .contact-title {
     font-size: 8rem;
     font-family: 'SFPro Bold';
+    width:100%;
 }
 
 .contact-desc {

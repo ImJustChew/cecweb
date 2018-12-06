@@ -1,9 +1,6 @@
 var queryString = decodeURIComponent(window.location.search);
 queryString = queryString.substring(1);
-var queries = queryString.split("&");
 
-var email = queries[0].split("=");
-var password = queries[0].split("=");
 var config = {
   apiKey: "AIzaSyCpWeoGzDrwoJjnsjBnDu-vVUt6LfGHyxk",
   authDomain: "cecdbfirebase.firebaseapp.com",
@@ -12,20 +9,31 @@ var config = {
 };
 
 firebase.initializeApp(config);
-var database = firebase.database();
 
 if(queryString.length > 0){
-  firebase.auth().createUserWithEmailAndPassword(email[1], password[1]).catch(function(error) {
-    // Handle Errors here.
+  var queries = queryString.split("&");
+
+  var email = queries[0].split("=");
+  var password = queries[1].split("=");
+
+  firebase.auth().signInWithEmailAndPassword(email[1], password[1]).catch(function(error) {
     var errorCode = error.code;
     var errorMessage = error.message;
-    // ...
+    toastText(errorMessage,10000);
   });
 }
 
+firebase.auth().onAuthStateChanged(function(user) {
+  if (user) {
+    toastText("Sign-in successful",3000);
+    setTimeout(function(){window.location.replace('index.html');},2000);
+  } else {
+  }
+});
+
+
 (function ($) {
     "use strict";
-
 
     /*==================================================================
     [ Focus input ]*/
@@ -55,7 +63,7 @@ if(queryString.length > 0){
             }
         }
 
-        return check;
+        return true;
     });
 
 
@@ -111,3 +119,16 @@ if(queryString.length > 0){
 
 
 })(jQuery);
+
+function toastText(toastMsg,timeout){
+    var cssfade = (timeout/1000)-0.5;
+    $("#snackbar").text(toastMsg);
+    $("#snackbar").css("visibility","visible");
+    $("#snackbar").css("-webkit-animation","fadein 0.5s, fadeout 0.5s "+cssfade.toString()+"s");
+    $("#snackbar").css("animation","fadeout 0.5s "+cssfade.toString()+"s");
+    setTimeout(function(){
+      $("#snackbar").css("visibility","");
+      $("#snackbar").css("-webkit-animation","");
+      $("#snackbar").css("animation","");
+    }, timeout);
+}

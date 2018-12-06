@@ -20,6 +20,12 @@ html, body {
   -ms-user-select: none;
 }
 
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+
 ::-webkit-scrollbar {
     display: none;
 }
@@ -151,8 +157,8 @@ a.pill-button:hover .pill-text,button.pill-button:hover .pill-text {
   position: relative;
 }
 
-.initial {
-  height: auto;
+.description {
+  height: 230%;
   width: 100%;
   text-align: center;
   background-color: #F7F7F7;
@@ -168,40 +174,44 @@ a.pill-button:hover .pill-text,button.pill-button:hover .pill-text {
   transform: translateY(-50%);
   display: inline-block;
 }
-.initial-content {
+.description-content {
   height:70%;
-  width: 60%;
+  width: 80%;
   display:inline-block;
-  text-align: left;
+  text-align: center;
 }
-.initial-title-text{
-  font-family: "SFPro Semibold";
+.description-title-text{
+  font-family: "SFPro Bold";
   margin-top: 10px;
   font-size: 3rem;
 }
-.initial-desc-text{
+.description-desc-text{
   font-family: "SFPro Regular";
   margin-top: 10px;
   font-size: 2rem;
 }
-.initial-container-title{
-  font-family: "SFPro Semibold";
-  margin-top: 10px;
-  font-size: 3.5rem;
+
+.year-text {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
-.initial-container-text-title{
-  font-family: "SFPro Regular";
-  margin-top: 10px;
+
+.achievements-list-item {
+  height:30%;
+  width: 100%;
+  margin-bottom: 15px;
+  margin-left: 4%;
+  text-align: left;
+}
+
+.list-title {
+  font-family: "SFPro Semibold";
   font-size: 2.5rem;
 }
-.initial-container-text{
+
+.list-desc {
   font-family: "SFPro Regular";
-  margin-top: 5px;
   font-size: 2rem;
-}
-
-.initial-container-button{
-
 }
 
 .about {
@@ -266,39 +276,35 @@ a.pill-button:hover .pill-text,button.pill-button:hover .pill-text {
     margin: 0 1rem;
 }
 
-.logo-container{
-  width: 50%;
-  height: 480px;
-	z-index: 2;
-	margin-left: auto;
-    margin-right: auto;
+.latest-content_container {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height:691px;
+  width:678px;
+  margin-left: 10px;
+  margin-right: 10px;
+  display:inline-block;
+  transition: transform .2s;
+
+}
+.latest-content_container:hover {
+    transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
-.overlay {
-	  position: absolute;
-	  bottom: 0;
-	  left: 0;
-	  right: 0;
-	  background-color: #F7F7F7;
-	  overflow: hidden;
-	  -webkit-transform: scale(0);
-	  -ms-transform: scale(0);
-	  transform: scale(0);
-	  -webkit-transition: .6s ease;
-	  transition: .6s ease;
-	  margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+.content-title {
+  width:100%;
+  font-family: "SFPro Semibold";
+  font-size: 50px;
+  color: white;
+  text-align: center;
+  display:inline-block;
+  margin-top: 50px;
 }
-
-.logo-container:hover .overlay {
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-}
-
-.image {
-	  width: 640px;
-  height: 480px;
-	display: block;
+.content-desc {
+  font-family: "SFPro Regular";
+  font-size: 30px;
+  margin-top: 30px;
+  color: white;
+  text-align: center;
+  display:inline-block;
 }
