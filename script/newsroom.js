@@ -12,4 +12,10 @@ if(target[0] == 'post'){
 
 if(selectedNews != 0){
   $(".news-container").css("opacity","1");
+  switch(selectedNews){
+    case "10112018":
+    break;
+    case "22092018":
+    break;
+  }
 }
