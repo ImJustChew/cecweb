@@ -14,10 +14,7 @@ html, body {
 }
 
 * {
-  user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
+
 }
 
 ul {
@@ -306,5 +303,24 @@ a.pill-button:hover .pill-text,button.pill-button:hover .pill-text {
   margin-top: 30px;
   color: white;
   text-align: center;
+  display:inline-block;
+}
+
+.news-container{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 9;
+  opacity: 0;
+  background-color: #F5F5F5;
+  top:0%;
+  bottom: 0%;
+  text-align: center;
+}
+
+.news-content{
+  width: 70%;
+  height: 90%;
+  text-align: left;
   display:inline-block;
 }

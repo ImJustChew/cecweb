@@ -14,10 +14,7 @@ html, body {
 }
 
 * {
-  user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
+  
 }
 
 ::-webkit-scrollbar {
@@ -284,8 +281,8 @@ a.pill-button:hover .pill-text,button.pill-button:hover .pill-text {
 	  -webkit-transform: scale(0);
 	  -ms-transform: scale(0);
 	  transform: scale(0);
-	  -webkit-transition: .6s ease;
-	  transition: .6s ease;
+	  -webkit-transition: 1s ease;
+	  transition: 1s ease;
 	  margin-left: auto;
     margin-right: auto;
     width: 50%;

@@ -11,18 +11,17 @@ html, body {
     transition: 0.3s;
     max-width: 100%;
     overflow-x: hidden;
+    cursor: default;
 }
 
 * {
-  user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
+
 }
 
 ::-webkit-scrollbar {
     display: none;
 }
+
 
 @font-face {
     font-family: 'Product Sans Regular';
@@ -206,7 +205,10 @@ a.login-button:hover .login-text,button.login-button:hover .login-text {
 
 .home-color {
   text-align: center;
-  background-color: #000000
+  background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("../img/cover.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
 }
 
 .about-color {
@@ -488,11 +490,13 @@ a.login-button:hover .login-text,button.login-button:hover .login-text {
 .service-desc-l1,.service-desc-l2,.service-desc-l3,.service-desc-l4 {
     height: 23%;
     width:  100%;
+    cursor: pointer;
 }
 
 .servicemenuoptionactive {
     transition: 0.3s;
     opacity: 1;
+    transform:scale(1.02);
 }
 
 .service-list-box {
@@ -848,4 +852,10 @@ a.login-button:hover .login-text,button.login-button:hover .login-text {
 @keyframes fadeout {
     from {bottom: 30px; opacity: 1;}
     to {bottom: 0; opacity: 0;}
+}
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  .about-image, .about-menu,.achievements-left,.achievements-right,.latest-content_left,.latest-content_right,.contact-left,.contact-right {
+    width:100%;
+  }
 }
