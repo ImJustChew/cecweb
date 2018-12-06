@@ -166,7 +166,7 @@ a.pill-button:hover .pill-text,button.pill-button:hover .pill-text {
 
 .title-text {
   font-family: 'SFPro Semibold';
-  font-size: 6rem;
+  font-size: 60px;
   position: relative;
   top:50%;
   transform: translateY(-50%);
@@ -181,12 +181,12 @@ a.pill-button:hover .pill-text,button.pill-button:hover .pill-text {
 .description-title-text{
   font-family: "SFPro Bold";
   margin-top: 10px;
-  font-size: 3rem;
+  font-size: 30px;
 }
 .description-desc-text{
   font-family: "SFPro Regular";
   margin-top: 10px;
-  font-size: 2rem;
+  font-size: 20px;
 }
 
 .year-text {
@@ -204,12 +204,12 @@ a.pill-button:hover .pill-text,button.pill-button:hover .pill-text {
 
 .list-title {
   font-family: "SFPro Semibold";
-  font-size: 2.5rem;
+  font-size: 25px;
 }
 
 .list-desc {
   font-family: "SFPro Regular";
-  font-size: 2rem;
+  font-size: 20px;
 }
 
 .about {
@@ -272,4 +272,28 @@ a.pill-button:hover .pill-text,button.pill-button:hover .pill-text {
     height: 50%;
     width: auto;
     margin: 0 1rem;
+}
+
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  .description-content {
+    width:90%;
+  }
+  .title-text{
+    margin-top: 20px;
+    font-size: 50px;
+  }
+  .description-title-text {
+    font-size: 28px;
+  }
+  .description-desc-text {
+    font-size: 18px;
+  }
+  .list-title{
+    font-size: 22px;
+  }
+  .list-desc{
+    font-size: 19px;
+  }
+
 }
