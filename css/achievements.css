@@ -14,7 +14,7 @@ html, body {
 }
 
 * {
-  
+
 }
 
 ul {
@@ -156,6 +156,7 @@ a.pill-button:hover .pill-text,button.pill-button:hover .pill-text {
 
 .description {
   height: auto;
+  top:-1px;
   width: 100%;
   text-align: center;
   background-color: #F7F7F7;
