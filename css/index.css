@@ -11,6 +11,7 @@ html, body {
     transition: 0.3s;
     max-width: 100%;
     overflow-x: hidden;
+    cursor: default;
 }
 
 * {
