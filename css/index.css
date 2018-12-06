@@ -22,6 +22,7 @@ html, body {
     display: none;
 }
 
+
 @font-face {
     font-family: 'Product Sans Regular';
     src: url("../fonts/Product-Sans-Regular.ttf");
@@ -851,4 +852,10 @@ a.login-button:hover .login-text,button.login-button:hover .login-text {
 @keyframes fadeout {
     from {bottom: 30px; opacity: 1;}
     to {bottom: 0; opacity: 0;}
+}
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  .about-image, .about-menu,.achievements-left,.achievements-right,.latest-content_left,.latest-content_right,.contact-left,.contact-right {
+    width:100%;
+  }
 }
