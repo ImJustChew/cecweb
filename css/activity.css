@@ -173,6 +173,10 @@ a.pill-button:hover .pill-text,button.pill-button:hover .pill-text {
   top:50%;
   transform: translateY(-50%);
   display: inline-block;
+    background-image: url(../img/background-1121216_1280.jpg);
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
 }
 .description-content {
   height:70%;
