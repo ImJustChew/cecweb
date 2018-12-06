@@ -204,7 +204,8 @@ a.login-button:hover .login-text,button.login-button:hover .login-text {
 
 .home-color {
   text-align: center;
-  background-color: #000000
+  background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../img/cover.png");
+  background-position: center;
 }
 
 .about-color {
