@@ -208,6 +208,8 @@ a.login-button:hover .login-text,button.login-button:hover .login-text {
   text-align: center;
   background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../img/cover.png");
   background-position: center;
+  background-repeat: no-repeat;
+  background-size:contain;
 }
 
 .about-color {
