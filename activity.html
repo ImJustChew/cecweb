@@ -16,53 +16,80 @@
         </div>
         <div class="contents">
             <div class="title">
-              <div class="title-text">Activities</div>
+              <div id="title-text" class="title-text" onclick="sdgverygood()">Activities</div>
+			  <div id="sdg-title" class="title-text" onclick="backintime()" style="display: none;">Sustainable Development Goals (SDG)</div>
             </div>
             <div class="description">
-              <div class="description-content">
-        			  <div class="description-title-text">
+              <div id="description-content" class="description-content">
+			  <div class="description-desc-main" id="start" onclick="start()">
+        			  <div class="description-title-main">
         				CEC activities are held in every Wednesday, Friday (3.20pm-5.00pm) and Saturday (9.00am-12.00pm).
         				</div>
         				<br />
-                <div class="description-title-text">
-                  Lesson 0 & Lesson 1
-                </div>
-                <div class="description-desc-text">
-                 Lesson 0 focus on the fundamentals of electronics while lesson 1 focus on more complex circuits. In the era of Artificial Intelligence, CEC strongly encourage an open-minded approach towards students’ learning process, CEC emphasizes mostly on practical lessons, for instance, by exposing students to a variety of circuits, students can understand the characteristics of each unique components. This enables students to discover the world of electronics and work as a team to develop a project, this enables students to develop Problem Solving, Critical Thinking and Teamworking skills, so that students are well prepared to face the entangled world. On the other hand, CEC always discouraging traditional teaching method, which is 100% theory and 0% practical.
-                 </div>
-                <div class="description-title-text">
-                  Power Supply Project
-                </div>
-                <div class="description-desc-text">
-                  Power Supply Project is an entry-level project for every form 1 students, it’s also an all-in-one project, a combination of Laser Cutting, 3D Printing, Woodworking, PCB Etching and Soldering. Students also can gain knowledge of Transformer Voltage Step Down, Rectification Process, Capacitor Charge/Discharge Properties and AC/DC Power Characteristics as well. This Project will be used as a power source for students future projects such as Mini Hand Drill Project.
-                </div>
-                <div class="description-title-text">
-                  Maker Class
-                </div>
-                <div class="description-desc-text">
-                  Maker Class is an additional class which held in every Saturday, its main purpose is for students who are highly interested in electronics to learn & create Arduino Projects, Develop Android App, Construct School & Competition Projects. Teaching these programmes to students is extremely hard, special thanks to our coach Mr Kang, who is willing to spend his time & effort on this class, which help students a lot because everything literally starts from zero. Our latest projects include the RGB Hall Clock, Wearable Message Display for traffic control, Car Speed & Weight Balance Project for science lab and a lot more.
-                </div>
-                <div class="description-title-text">
-                  Competitions & Exhibitions
-                </div>
-                <div class="description-desc-text">
-                  “The sky is the limit” that’s what our members believe, instead of competing with others, why not compete with ourselves? CEC provides many golden opportunities for our members to take part in the competitions and exhibitions. It’s not all about winning awards and prize money, most importantly join the community of makers, using our small ideas to make the world a better place.
-                </div>
-                <div class="description-title-text">
-                  Community Services
-                </div>
-                <div class="description-desc-text">
-                  Every year, CEC host at least 2 community services, although it doesn’t sound much, It’s the little drops of water that make the mighty ocean. Everyone can make a difference to the society if they have the will to do so, CEC is being responsible to the community by contributing in a positive way. So far, CEC hosted many community services such as cleaning rubbish on the public areas like park, roadside, beach, helping the orphanage, old folks home and many more.
-                </div>
-                <div class="description-title-text">
-                  Sustainable Development Goals (SDG)
-                </div>
-                <div class="description-desc-text">
-                  CEC implements Sustainable development goals (SDGs) into CEC lesson, to ensure that students are aware of our World Ongoing Problems and its solutions. The SDGs are unique in that they cover issues that affect us all. They reaffirm our international commitment to end poverty, permanently, everywhere. They are ambitious in making sure no one is left behind. More importantly, they involve us all to build a more sustainable, safer, more prosperous planet for all humanity.
-                </div>
-                <div class="description-title-text">&nbsp</div>
-                <div class="description-title-text">&nbsp</div>
+				</div>
+				<div id="content-container" class="content-container" style="display:none;">
+					<div id="l0n1" onclick="menuitem(0)" class="active">
+						<div class="description-title-text">
+						  Lesson 0 & Lesson 1
+						</div>
+					</div>
+					<div id="l0n1-desc">
+						<div class="description-desc-text">
+						 Lesson 0 focus on the fundamentals of electronics while lesson 1 focus on more complex circuits. In the era of Artificial Intelligence, CEC strongly encourage an open-minded approach towards students’ learning process, CEC emphasizes mostly on practical lessons, for instance, by exposing students to a variety of circuits, students can understand the characteristics of each unique components. This enables students to discover the world of electronics and work as a team to develop a project, this enables students to develop Problem Solving, Critical Thinking and Teamworking skills, so that students are well prepared to face the entangled world. On the other hand, CEC always discouraging traditional teaching method, which is 100% theory and 0% practical.
+						 </div>
+					</div>	
+					<div id="psp" onclick="menuitem(1)">
+						<div class="description-title-text">
+						  Power Supply Project
+						</div>
+					</div>
+					<div id="psp-desc" style="display:none;">
+						<div class="description-desc-text">
+						  Power Supply Project is an entry-level project for every form 1 students, it’s also an all-in-one project, a combination of Laser Cutting, 3D Printing, Woodworking, PCB Etching and Soldering. Students also can gain knowledge of Transformer Voltage Step Down, Rectification Process, Capacitor Charge/Discharge Properties and AC/DC Power Characteristics as well. This Project will be used as a power source for students future projects such as Mini Hand Drill Project.
+						</div>
+					</div>	
+					<div id="mc" onclick="menuitem(2)"> 
+						<div class="description-title-text">
+						  Maker Class
+						</div>
+					</div>
+					<div id="mc-desc" style="display:none;">
+						<div class="description-desc-text">
+						  Maker Class is an additional class which held in every Saturday, its main purpose is for students who are highly interested in electronics to learn & create Arduino Projects, Develop Android App, Construct School & Competition Projects. Teaching these programmes to students is extremely hard, special thanks to our coach Mr Kang, who is willing to spend his time & effort on this class, which help students a lot because everything literally starts from zero. Our latest projects include the RGB Hall Clock, Wearable Message Display for traffic control, Car Speed & Weight Balance Project for science lab and a lot more.
+						</div>
+					</div>
+					<div id="cne" onclick="menuitem(3)">	
+						<div class="description-title-text">
+						  Competitions & Exhibitions
+						</div>
+					</div>
+					<div id="cne-desc" style="display:none;">	
+						<div class="description-desc-text">
+						  “The sky is the limit” that’s what our members believe, instead of competing with others, why not compete with ourselves? CEC provides many golden opportunities for our members to take part in the competitions and exhibitions. It’s not all about winning awards and prize money, most importantly join the community of makers, using our small ideas to make the world a better place.
+						</div>
+					</div>
+					<div id="cs" onclick="menuitem(4)">
+						<div class="description-title-text">
+						  Community Services
+						</div>
+					</div>
+					<div id="cs-desc" style="display:none;">
+						<div class="description-desc-text">
+						  Every year, CEC host at least 2 community services, although it doesn’t sound much, It’s the little drops of water that make the mighty ocean. Everyone can make a difference to the society if they have the will to do so, CEC is being responsible to the community by contributing in a positive way. So far, CEC hosted many community services such as cleaning rubbish on the public areas like park, roadside, beach, helping the orphanage, old folks home and many more.
+						</div>
+					</div>	
+				<div id="idle-desc" class="description-idle-desc" style="display:none;">
+						  Select a menu item from left hand side. Please. Don't make it awkwardly blank.
+						  </div>	
+				</div>		
               </div>
+				<div id="sdg-container" style="display:none;">
+						<div id="sdg-desc">
+							<div class="description-sdg-desc">
+							  CEC implements Sustainable development goals (SDGs) into CEC lesson, to ensure that students are aware of our World Ongoing Problems and its solutions. The SDGs are unique in that they cover issues that affect us all. They reaffirm our international commitment to end poverty, permanently, everywhere. They are ambitious in making sure no one is left behind. More importantly, they involve us all to build a more sustainable, safer, more prosperous planet for all humanity.
+							</div>
+						</div>
+					</div>	
             </div>
             <div class="footer"></div>
         </div>
@@ -85,4 +112,5 @@
             </div>
         </div>
     </body>
+	<script src="./script/activity.js"></script>
 </html>
