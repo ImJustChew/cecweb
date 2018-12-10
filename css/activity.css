@@ -14,7 +14,7 @@ html, body {
 }
 
 * {
-  
+
 }
 
 ul {
@@ -173,7 +173,7 @@ a.pill-button:hover .pill-text,button.pill-button:hover .pill-text {
     background-image: url(../img/background-1121216_1280.jpg);
     background-size: cover;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
+    -webkit-text-fill-color: transparent;
 }
 .description-content {
   height:70%;
@@ -275,4 +275,22 @@ a.pill-button:hover .pill-text,button.pill-button:hover .pill-text {
     height: 50%;
     width: auto;
     margin: 0 1rem;
+}
+
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  .description-content {
+    width:90%;
+  }
+  .title-text{
+    margin-top: 20px;
+    font-size: 50px;
+  }
+  .description-title-text {
+    font-size: 28px;
+  }
+  .description-desc-text {
+    font-size: 18px;
+  }
+
 }
