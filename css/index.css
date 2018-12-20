@@ -697,68 +697,6 @@ a.login-button:hover .login-text,button.login-button:hover .login-text {
     transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
-.contact-left {
-    height: 100%;
-    width: 70%;
-    text-align: right;
-    display: inline-block;
-    vertical-align: top;
-}
-
-.contact-left-content {
-    display: inline-block;
-    height: 100%;
-    width: 80%;
-    margin-right: 8%;
-}
-
-.contact-right {
-    height: 100%;
-    width: 30%;
-    display: inline-block;
-    text-align: left;
-}
-
-.contact-right-updown-content {
-    height: 90%;
-    width: 100%;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.contact-right-up {
-    height: 40%;
-    width: 100%;
-}
-
-.contact-right-down {
-    height: 50%;
-    width: 100%;
-}
-
-.contact-right-content {
-    height: auto;
-    width: 100%;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.contact-title {
-    font-size: 8rem;
-    font-family: 'SFPro Bold';
-    width:100%;
-}
-
-.contact-desc {
-    font-size: 2rem;
-}
-
-.contact-address {
-    font-size: 2.2rem;
-}
-
 .footer-box {
     height: 100%;
     width: 100%;
@@ -790,6 +728,12 @@ a.login-button:hover .login-text,button.login-button:hover .login-text {
     font-size: 4rem;
     margin-top: 2rem;
     margin-bottom: 6rem;
+}
+.footer-content-15 {
+  height:auto;
+  color:white;
+  font-family: 'SFPro Regular';
+  font-size: 1.5rem;
 }
 
 .footer-content-2,.footer-content-3 {
