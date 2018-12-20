@@ -653,9 +653,10 @@ a.login-button:hover .login-text,button.login-button:hover .login-text {
   height:100%;
   width:45%;
   margin-right: 10px;
-  background-image: linear-gradient(rgba(0, 0, 0, 1),rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.0)),url("../img/latest_1.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 1),rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.0)),url("../img/bitcoin.jpg");
   background-position: center;
   background-size: contain;
+  background-repeat: no-repeat;
   display:inline-block;
   transition: transform .2s;
 
@@ -686,7 +687,7 @@ a.login-button:hover .login-text,button.login-button:hover .login-text {
   height:100%;
   width:45%;
   margin-left: 10px;
-  background-image: linear-gradient(rgba(0, 0, 0, 1),rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.0)),url("../img/latest_2.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 1),rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.0)),url("../img/miner.jpg");
   background-position: center;
   background-size: cover;
   display:inline-block;
