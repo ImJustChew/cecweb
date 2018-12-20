@@ -802,4 +802,7 @@ a.login-button:hover .login-text,button.login-button:hover .login-text {
   .about-image, .about-menu,.achievements-left,.achievements-right,.latest-content_left,.latest-content_right,.contact-left,.contact-right {
     width:100%;
   }
+  .mobile {
+    padding-left: 0;
+  }
 }
