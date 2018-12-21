@@ -92,6 +92,7 @@ html, body {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+    background-image: url("./img/cec-logo-white.png");
 }
 
 .pill-button {
