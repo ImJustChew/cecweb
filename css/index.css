@@ -799,7 +799,26 @@ a.login-button:hover .login-text,button.login-button:hover .login-text {
 }
 @media only screen and (max-width:620px) {
   /* For mobile phones: */
-  .about-image, .about-menu,.achievements-left,.achievements-right,.latest-content_left,.latest-content_right,.contact-left,.contact-right {
+  .about-image, .about-menu,.achievements-left,.achievements-right,.contact-left,.contact-right {
+    width:100%;
+  }
+  .latest-content_left,.latest-content_right{
+    width:100%;
+    height:50%;
+    margin:0;
+    margin-top: 10px;
+  }
+  .latest {
+    height:200%;
+  }
+  .mobile {
+    padding-left: 0;
+  }
+}
+
+@media only screen and (max-width:940px) {
+  /* For mobile phones: */
+  .achievements-left,.achievements-right {
     width:100%;
   }
   .mobile {
