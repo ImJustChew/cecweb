@@ -26,7 +26,7 @@ if(queryString.length > 0){
 firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
     toastText("Sign-in successful",3000);
-    setTimeout(function(){window.location.replace('index.html');},2000);
+    setTimeout(function(){window.location.replace('../');},2000);
   } else {
   }
 });
