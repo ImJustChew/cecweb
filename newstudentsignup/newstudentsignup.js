@@ -19,6 +19,15 @@ $( document ).ready(function() {
       var email       = $('#email').val();
       var facebook    = $('#facebook').val();
       var special     = $('#special').val();
+      var upsrsc = "";
+      var upsrmath = "";
+      if(($("input[name='upsrsc']:checked").val() == null)&&($("input[name='upsrmath']:checked").val() == null)){
+        toastText("Please enter a valid UPSR result",4000);
+        return false;
+      }else{
+        upsrsc = $("input[name='upsrsc']:checked").val();
+        upsrmath = $("input[name='upsrmath']:checked").val();
+      }
       var fathername  = $('#fathername').val();
       var fatherocc   = $('#fatherocc').val();
       var fatherphone = $('#fatherphone').val();
@@ -44,6 +53,8 @@ $( document ).ready(function() {
           "email":email,
           "facebook":facebook,
           "specials":special,
+          "upsrsc":upsrsc,
+          "upsrmath":upsrmath,
           "fathername":fathername,
           "fatherocc":fatherocc,
           "fatherphone":fatherphone,
@@ -57,9 +68,28 @@ $( document ).ready(function() {
           "additional3":additional3,
           "senderIP":userIP
         }
-        var newPostKey = database.ref().child('userWritable/newUserData/').push(newUserData);
+        var newPostKey = database.ref().child('userWritable/newUserData/').push(newUserData, function(error) {
+          if (error) {
+            toastText(error,5000);
+          } else {
+            window.location.assign('success');
+          }
+        });
       });
       event.preventDefault();
       return "coconut";
-    })
+    });
 });
+
+function toastText(toastMsg,timeout){
+    var cssfade = (timeout/1000)-0.5;
+    $("#snackbar").text(toastMsg);
+    $("#snackbar").css("visibility","visible");
+    $("#snackbar").css("-webkit-animation","fadein 0.5s, fadeout 0.5s "+cssfade.toString()+"s");
+    $("#snackbar").css("animation","fadeout 0.5s "+cssfade.toString()+"s");
+    setTimeout(function(){
+      $("#snackbar").css("visibility","");
+      $("#snackbar").css("-webkit-animation","");
+      $("#snackbar").css("animation","");
+    }, timeout);
+}
