@@ -227,6 +227,15 @@ a.pill-button:hover .pill-text,button.pill-button:hover .pill-text {
   color:#000000;
 }
 
+.input-field:hover{
+  box-shadow: inset 0 0 0 2px rgb(63,81,181);
+  color:#000000;
+}
+
+.input-box-full {
+  width:100%;!important
+}
+
 .about {
   height: 100%;
   width: 100%;
