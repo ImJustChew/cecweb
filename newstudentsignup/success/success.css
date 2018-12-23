@@ -29,34 +29,34 @@ ul {
 
 @font-face {
     font-family: 'Product Sans Regular';
-    src: url(".../fonts/Product-Sans-Regular.ttf");
+    src: url("../../fonts/Product-Sans-Regular.ttf");
 }
 
 @font-face {
     font-family: 'Product Sans Bold';
-    src: url(".../fonts/Product-Sans-Bold.ttf");
+    src: url("../../fonts/Product-Sans-Bold.ttf");
 }
 
 @font-face {
     font-family: 'SFPro Regular';
-    src: url(".../fonts/SFProDisplay-Regular.ttf");
+    src: url("../../fonts/SFProDisplay-Regular.ttf");
 }
 
 @font-face {
     font-family: 'SFPro Semibold';
-    src: url(".../fonts/SFProDisplay-Semibold.ttf");
+    src: url("../../fonts/SFProDisplay-Semibold.ttf");
 }
 @font-face {
     font-family: 'SFPro Bold';
-    src: url(".../fonts/SFProDisplay-Bold.ttf");
+    src: url("../../fonts/SFProDisplay-Bold.ttf");
 }
 @font-face {
     font-family: 'SFProText Regular';
-    src: url(".../fonts/SFProText-Regular.ttf");
+    src: url("../../fonts/SFProText-Regular.ttf");
 }
 @font-face {
     font-family: 'SFProText Semibold';
-    src: url(".../fonts/SFProText-Semibold.ttf");
+    src: url("../../fonts/SFProText-Semibold.ttf");
 }
 
 
