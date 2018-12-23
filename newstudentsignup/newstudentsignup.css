@@ -171,6 +171,7 @@ a.pill-button:hover .pill-text,button.pill-button:hover .pill-text {
   top:50%;
   transform: translateY(-50%);
   display: inline-block;
+  LINE-HEIGHT: 50px;
 }
 .description-content {
   height:70%;
