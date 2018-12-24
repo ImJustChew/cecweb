@@ -40,8 +40,8 @@ $( document ).ready(function() {
       var additional2   = $('#additional2').val();
       var additional3   = $('#additional3').val();
       var userIP = "";
-      $.getJSON('http://gd.geobytes.com/GetCityDetails?callback=?', function(data) {
-        userIP = data.geobytesremoteip;
+      $.getJSON('https://ipapi.co/json/', function(data) {
+        userIP = data.ip;
         var newUserData= {
           "eng_name": eng_name,
           "chi_name": chi_name,
