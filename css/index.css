@@ -846,6 +846,14 @@ a.login-button:hover .login-text,button.login-button:hover .login-text {
   .about-image, .about-menu,.achievements-left,.achievements-right,.contact-left,.contact-right {
     width:100%;
   }
+  .about-menu {
+    width:80%;
+    height:30%;
+  }
+  .about-image {
+    text-align: center;
+    height:40%;
+  }
   .latest-content_left,.latest-content_right{
     width:100%;
     margin:0;

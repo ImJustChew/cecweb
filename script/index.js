@@ -71,7 +71,7 @@ $(window).on("scroll", function() {
     var startServices = servicescene.scrollOffset();
     var endServices = servicescene.scrollOffset() + servicescene.duration();
     scrollPosition = $(window).scrollTop();
-    if ((scrollPosition >= $(".about").offset().top / 1.5) && initAbout) {
+    if ((scrollPosition >= $(".about").offset().top / 2) && initAbout) {
           $(".about-l3").css("z-index",5);
           $(".about-l3").addClass("fadeIn");
           $(".about-history").addClass("fadeIn");
