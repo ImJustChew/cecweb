@@ -15,6 +15,10 @@ $( document ).ready(function() {
         toastText("Please fill in the fields",4000);
         return false;
       }
+      if (/\s/.test(username)) {
+        toastText("Username should not contains spaces",4000);
+        return false;
+      }
       var current_password = generatePassword();
       var newuser = {
         "full_name": full_name,
