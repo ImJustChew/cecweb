@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Personal Information</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" initial-scale="1"/>
+        <meta charset="utf-8"/>
+        <link rel="icon" href="../img/cec-logo_overlay2.png"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+        <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.7.1/firebase.js"></script>
+        <script src="newstudentsignup.js"></script>
+        <link rel="stylesheet" href="newstudentsignup.css"/>
+    </head>
+    <body class="body">
+        <div class="header">
+          <a href="../">
+            <img src="../img/cec-logo-black.png"/>
+          </a>
+        </div>
+        <div class="contents">
+            <div class="title">
+              <div class="title-text">Create Account</div>
+            </div>
+            <div class="description">
+              <div class="description-content">
+                <form id="info-form">
+                  <div class="description-desc-text">
+                    This account creation form is for the domain login accounts for CEC computers.<br />
+                    We add users manually so it might take time, usually within 1 day for it to be added.<br />
+                    To add your account, Simply fill in the form below and we will give you your password which you will change when you first log-in.
+                    <br /><br />
+                    *this is not secure in anyway.. everything is in plain text.
+                  </div>
+                  <div id="personal-field" class="input-field">
+                    <div class="description-title-text">Credentials</div>
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                      <input class="mdl-textfield__input" type="text" id="full_name">
+                      <label class="mdl-textfield__label" for="full_name">Full Name</label>
+                    </div>
+                    <br />
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                      <input class="mdl-textfield__input" type="text" id="username">
+                      <label class="mdl-textfield__label" for="username">Prefered Username</label>
+                    </div>
+                    <div style="text-align:right">
+                      <button class="mdl-button mdl-js-button mdl-button--primary" style="margin:8px;border: 1px solid #e0e0e0;border-radius: 8px;">
+                        Done
+                      </button>
+                    </div>
+                  </div>
+                  <div id="success-field" class="input-field hidden hovered">
+                    <div class="description-title-text">Submittion Successful</div>
+                    <div class="description-desc-text">
+                      Your account will be added whenever that person who should be in charge adds it.
+                      Please note down your username and password to perform first time login.<br />
+                    </div>
+                    <div class="description-title-text">Credentials</div>
+                    <div class="description-desc-text" id="username_text"></div>
+                    <div class="description-desc-text" id="password_text"></div>
+                  </div>
+                </form>
+                <div class="description-title-text">&nbsp</div>
+              </div>
+            </div>
+        </div>
+        <div id="snackbar"></div>
+    </body>
+</html>
