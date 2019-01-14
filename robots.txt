@@ -1,0 +1,10 @@
+# Rule 1
+User-agent: *
+Disallow: /img/
+Disallow: /css/
+Disallow: /newstudentsignup/
+Disallow: /newuserforcomputer/
+Disallow: /script/
+Disallow: /google8a58d53f12e4efc12.html
+
+Sitemap: https://clphscec.com/sitemap.xml
