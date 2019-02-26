@@ -76,7 +76,7 @@ ul {
 }
 
 .footer {
-    height: 100%;
+    height: 30%;
     width: 100%;
     text-align: left;
     pointer-events: none;
@@ -222,56 +222,57 @@ a.pill-button:hover .pill-text,button.pill-button:hover .pill-text {
 }
 
 .footer-box {
-    height: 100%;
+    height: 30%;
     width: 100%;
-    background-color: #212121;
+    background-color: #FFFFFF;
     color: black;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 5;
+    text-align: center;
+    transform: translateY(233%);
+}
+.footer-address{
+  font-family: "SFPro Regular";
+  font-size: 15px;
 }
 
 .footer-box-container {
-    height: auto;
-    width: 100%;
+    height: 80%;
+    width: 60%;
+    margin-top: 2%;
+    display:inline-block;
     position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+
+}
+.links-container{
+  height: 100%;
+  width:calc(100%/3 - 2px);
+  display:inline-block;
+  text-align: left;
+  vertical-align: top;
 }
 
-.footer-box-container img {
-    height: 11rem;
-    width: auto;
+.links-container a{
+  font-size: 15px;
+  font-family: "SFPro Regular";
+  font-weight: 400;
+  display:block;
+  text-decoration: none;
+  color:#5F5F5F;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  transition: transform .2s;
 }
 
-.footer-content-1 {
-    height: auto;
-    color: white;
-    font-family: 'SFPro Bold';
-    font-size: 4rem;
-    margin-top: 2rem;
-    margin-bottom: 6rem;
+.links-container a:hover{
+  font-weight: 600;
 }
 
-.footer-content-2,.footer-content-3 {
-    height: auto;
-    color: white;
-    font-family: 'SFPro Bold';
-    font-size: 1.5rem;
-    margin: 1rem 0;
-}
-
-.footer-content-links {
-    height: 10rem;
-    width: 100%;
-    margin-top: 6rem;
-}
-
-.footer-content-links img {
-    height: 50%;
-    width: auto;
-    margin: 0 1rem;
+.footer-ceclogo {
+  height:30px;
+  margin-bottom: 10px;
 }
 
 @media only screen and (max-width:620px) {
@@ -295,5 +296,23 @@ a.pill-button:hover .pill-text,button.pill-button:hover .pill-text {
   .list-desc{
     font-size: 19px;
   }
+  .footer {
+    height:100%;
+  }
 
+  .footer-box {
+      height: auto;
+      transform:translateY(20%);
+  }
+
+  .links-container{
+    height: auto;
+    width:calc(100% - 2px);
+    display:inline-block;
+    text-align: left;
+    vertical-align: top;
+  }
+  .links-container a{
+    font-size: 18px;
+  }
 }

@@ -351,5 +351,23 @@ a.pill-button:hover .pill-text,button.pill-button:hover .pill-text {
   .description-desc-text {
     font-size: 18px;
   }
+  .footer {
+    height:100%;
+  }
 
+  .footer-box {
+      height: auto;
+      transform:translateY(20%);
+  }
+
+  .links-container{
+    height: auto;
+    width:calc(100% - 2px);
+    display:inline-block;
+    text-align: left;
+    vertical-align: top;
+  }
+  .links-container a{
+    font-size: 18px;
+  }
 }

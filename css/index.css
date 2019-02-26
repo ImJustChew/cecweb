@@ -864,6 +864,26 @@ a.login-button:hover .login-text,button.login-button:hover .login-text {
   .mobile {
     padding-left: 0;
   }
+
+  .footer {
+    height:100%;
+  }
+
+  .footer-box {
+      height: auto;
+      transform:translateY(20%);
+  }
+
+  .links-container{
+    height: auto;
+    width:calc(100% - 2px);
+    display:inline-block;
+    text-align: left;
+    vertical-align: top;
+  }
+  .links-container a{
+    font-size: 18px;
+  }
 }
 
 @media only screen and (max-width:940px) {
