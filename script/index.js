@@ -58,13 +58,7 @@ $(window).on("load", function() {
     var progress = scrollPosition / totalHeight * 100;
     $(".progressbar-thumb").css("height",progress + "%");
     totalHeight = $(".home").height() + $(".about").height() + $(".goal").height() + $(".achievements").height() + $(".services").height() + $(".contact").height() + $(".footer").height();
-    inputText(".home-title-a","SETTING A",40);
-    setTimeout(function() {
-        inputText(".home-title-b","NEW FRONTIER",40);
-        setTimeout(function() {
-            $(".home-desc").addClass("fadeIn");
-        },1000);
-    },600);
+    
 });
 
 $(window).on("scroll", function() {

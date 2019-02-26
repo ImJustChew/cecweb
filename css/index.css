@@ -211,7 +211,7 @@ a.login-button:hover .login-text,button.login-button:hover .login-text {
 
 .home-color {
   text-align: center;
-  background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("../img/cover.png");
+  background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8),rgba(0,0,0,0.6),rgba(0,0,0,0.4)),url("../img/cover.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size:cover;
@@ -282,7 +282,7 @@ a.login-button:hover .login-text,button.login-button:hover .login-text {
 }
 
 .home-break {
-    height: 6rem;
+    height: 3rem;
     width: 100%;
 }
 
@@ -290,7 +290,6 @@ a.login-button:hover .login-text,button.login-button:hover .login-text {
     font-family: 'SFPro Semibold';
     font-size: 3rem;
     color: #FFFFFF;
-    opacity: 0;
 }
 
 .about-learn-more {
@@ -797,40 +796,6 @@ a.login-button:hover .login-text,button.login-button:hover .login-text {
   margin-bottom: 10px;
 }
 
-.footer-content-1 {
-    height: auto;
-    color: white;
-    font-family: 'SFPro Bold';
-    font-size: 4rem;
-    margin-top: 2rem;
-    margin-bottom: 6rem;
-}
-.footer-content-15 {
-  height:auto;
-  color:white;
-  font-family: 'SFPro Regular';
-  font-size: 1.5rem;
-}
-
-.footer-content-2,.footer-content-3 {
-    height: auto;
-    color: white;
-    font-family: 'SFPro Bold';
-    font-size: 1.5rem;
-    margin: 1rem 0;
-}
-
-.footer-content-links {
-    height: 10rem;
-    width: 100%;
-    margin-top: 6rem;
-}
-
-.footer-content-links img {
-    height: 50%;
-    width: auto;
-    margin: 0 1rem;
-}
 
 .invert {
   -webkit-filter: invert(1);
