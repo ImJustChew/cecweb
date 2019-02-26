@@ -785,6 +785,11 @@ a.login-button:hover .login-text,button.login-button:hover .login-text {
   color:#5F5F5F;
   margin-top: 15px;
   margin-bottom: 15px;
+  transition: transform .2s;
+}
+
+.links-container a:hover{
+  font-weight: 600;
 }
 
 .footer-ceclogo {
