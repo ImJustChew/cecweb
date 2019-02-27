@@ -43,34 +43,34 @@ ul {
 
 @font-face {
     font-family: 'Product Sans Regular';
-    src: url("../fonts/Product-Sans-Regular.ttf");
+    src: url("../../fonts/Product-Sans-Regular.ttf");
 }
 
 @font-face {
     font-family: 'Product Sans Bold';
-    src: url("../fonts/Product-Sans-Bold.ttf");
+    src: url("../../fonts/Product-Sans-Bold.ttf");
 }
 
 @font-face {
     font-family: 'SFPro Regular';
-    src: url("../fonts/SFProDisplay-Regular.ttf");
+    src: url("../../fonts/SFProDisplay-Regular.ttf");
 }
 
 @font-face {
     font-family: 'SFPro Semibold';
-    src: url("../fonts/SFProDisplay-Semibold.ttf");
+    src: url("../../fonts/SFProDisplay-Semibold.ttf");
 }
 @font-face {
     font-family: 'SFPro Bold';
-    src: url("../fonts/SFProDisplay-Bold.ttf");
+    src: url("../../fonts/SFProDisplay-Bold.ttf");
 }
 @font-face {
     font-family: 'SFProText Regular';
-    src: url("../fonts/SFProText-Regular.ttf");
+    src: url("../../fonts/SFProText-Regular.ttf");
 }
 @font-face {
     font-family: 'SFProText Semibold';
-    src: url("../fonts/SFProText-Semibold.ttf");
+    src: url("../../fonts/SFProText-Semibold.ttf");
 }
 
 
@@ -227,28 +227,6 @@ a.pill-button:hover .pill-text,button.pill-button:hover .pill-text {
   font-size: 20px;
 }
 
-.input-field {
-  height:auto;
-  padding: 20px;
-  color:#b0b0b0;
-  margin:10px;
-  box-shadow: inset 0 0 0 1px #d0d0d0;
-  border-radius: 10px;
-  transition: 0.3s;
-}
-.input-field:focus-within{
-  box-shadow: inset 0 0 0 2px rgb(63,81,181);
-  color:#000000;
-}
-
-.input-field:hover{
-  box-shadow: inset 0 0 0 2px rgb(63,81,181);
-  color:#000000;
-}
-
-.input-box-full {
-  width:100%;!important
-}
 
 .about {
   height: 100%;

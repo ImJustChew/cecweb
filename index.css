@@ -1,144 +1,3 @@
-html, body {
-    height: 100%;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    font-family: 'SFPro Regular';
-    font-size: 10px;
-    background-color: white;
-    color: black;
-    text-align: center;
-    transition: 0.3s;
-    max-width: 100%;
-    overflow-x: hidden;
-    cursor: default;
-}
-
-* {
-
-}
-
-::-webkit-scrollbar {
-    display: none;
-}
-
-
-@font-face {
-    font-family: 'Product Sans Regular';
-    src: url("../fonts/Product-Sans-Regular.ttf");
-}
-
-@font-face {
-    font-family: 'Product Sans Bold';
-    src: url("../fonts/Product-Sans-Bold.ttf");
-}
-
-@font-face {
-    font-family: 'SFPro Regular';
-    src: url("../fonts/SFProDisplay-Regular.ttf");
-}
-
-@font-face {
-    font-family: 'SFPro Semibold';
-    src: url("../fonts/SFProDisplay-Semibold.ttf");
-}
-@font-face {
-    font-family: 'SFPro Bold';
-    src: url("../fonts/SFProDisplay-Bold.ttf");
-}
-@font-face {
-    font-family: 'SFProText Regular';
-    src: url("../fonts/SFProText-Regular.ttf");
-}
-@font-face {
-    font-family: 'SFProText Semibold';
-    src: url("../fonts/SFProText-Semibold.ttf");
-}
-
-.fadeIn {
-    transition: 0.4s;
-    opacity: 1 !important;
-}
-
-.fadeOut {
-    transition: 0.4s;
-    opacity: 0 !important;
-}
-
-.header {
-    text-align: left;
-    height: 15%;
-    width: 100%;
-    position: relative;
-    top: 0;
-    left: 0;
-    z-index: 7;
-}
-
-.contents {
-    height: 100%;
-    width: 100%;
-    z-index: 6;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.cec-logo {
-    margin-left: 5%;
-    margin-right: 5%;
-    height: 90%;
-    width: auto;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    background-image: url("./img/cec-logo-white.png");
-}
-
-.pill-button {
-    text-decoration: none;
-    font-weight: 600;
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    height: 46px;
-    margin-top: 40px;
-    padding: 0 23px;
-    border-radius: 46px;
-    border: 2px solid black;
-    -webkit-transition: cubic-bezier(0.4, 0, 0.6, 1);
-    transition: cubic-bezier(0.4, 0, 0.6, 1);
-    cursor:pointer;
-}
-
-.pill-text{
-  font-size: 17px;
-  font-family: 'SFProText Regular';
-  color: black;
-  position:relative;
-}
-
-.pill-button .pill-text {
-    color: black;
-    -webkit-transition: 300ms color cubic-bezier(0.4, 0, 0.6, 1);
-    transition: 300ms color cubic-bezier(0.4, 0, 0.6, 1)
-}
-
-a.pill-button:hover,button.pill-button:hover {
-    background: black;
-    -webkit-transition: 300ms background cubic-bezier(0.4, 0, 0.6, 1);
-    transition: 300ms background cubic-bezier(0.4, 0, 0.6, 1);
-}
-
-a.pill-button:hover .pill-text,button.pill-button:hover .pill-text {
-    color: #FFF;
-    text-decoration: none;
-    -webkit-transition: 300ms color cubic-bezier(0.4, 0, 0.6, 1);
-    transition: 300ms color cubic-bezier(0.4, 0, 0.6, 1)
-}
 
 .login-button {
   margin-right: 5%;
@@ -196,6 +55,7 @@ a.login-button:hover .login-text,button.login-button:hover .login-text {
     padding: 10px;
 }
 
+
 .latest {
   height:auto;
 }
@@ -211,7 +71,7 @@ a.login-button:hover .login-text,button.login-button:hover .login-text {
 
 .home-color {
   text-align: center;
-  background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8),rgba(0,0,0,0.6),rgba(0,0,0,0.4)),url("../img/cover.png");
+  background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8),rgba(0,0,0,0.6),rgba(0,0,0,0.4)),url("./img/cover.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size:cover;
@@ -221,13 +81,6 @@ a.login-button:hover .login-text,button.login-button:hover .login-text {
   background-image: linear-gradient(black, #F5F6F6);
 }
 
-.footer {
-    height: 30%;
-    width: 100%;
-    text-align: left;
-    pointer-events: none;
-
-}
 
 .contact-content {
     height: 70%;
@@ -357,7 +210,7 @@ a.login-button:hover .login-text,button.login-button:hover .login-text {
     z-index: 3;
     opacity: 0;
     transition: 0.3s;
-    background-image: url("../img/cec-robot.png");
+    background-image: url("./img/cec-robot.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size:contain;
@@ -391,7 +244,7 @@ a.login-button:hover .login-text,button.login-button:hover .login-text {
 .goal-text {
   font-family: "SFPro Bold";
   font-size: 5.5rem;
-  background-image: url("../img/background-1121216_1280.jpg");
+  background-image: url("./img/background-1121216_1280.jpg");
   background-size: cover;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -433,7 +286,7 @@ a.login-button:hover .login-text,button.login-button:hover .login-text {
   margin-right:2%;
   font-size: 6rem;
   display:inline-block;
-  background-image: url("../img/background-1121216_1280.jpg");
+  background-image: url("./img/background-1121216_1280.jpg");
   background-position: center;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -454,20 +307,11 @@ a.login-button:hover .login-text,button.login-button:hover .login-text {
   text-align: left;
 }
 
-.list-title {
-  font-family: "SFPro Semibold";
-  font-size: 2.5rem;
-}
-
-.list-desc {
-  font-family: "SFPro Regular";
-  font-size: 2rem;
-}
 
 .service-content-text {
   font-family: "SFPro Bold";
   font-size: 8rem;
-  background-image: url("../img/background-1121216_1280.jpg");
+  background-image: url("./img/background-1121216_1280.jpg");
   background-position: center;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -539,7 +383,7 @@ a.login-button:hover .login-text,button.login-button:hover .login-text {
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url("../img/Laser-Cutter.png");
+    background-image: url("./img/Laser-Cutter.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size:contain;
@@ -552,7 +396,7 @@ a.login-button:hover .login-text,button.login-button:hover .login-text {
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url("../img/3D-Printer.png");
+    background-image: url("./img/3D-Printer.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size:contain;
@@ -565,7 +409,7 @@ a.login-button:hover .login-text,button.login-button:hover .login-text {
     position: absolute;
     top: 0;
     left: 10%;
-    background: url("../img/woodworking.jpg");
+    background: url("./img/woodworking.jpg");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -577,15 +421,12 @@ a.login-button:hover .login-text,button.login-button:hover .login-text {
     position: absolute;
     top: 0;
     left: 10%;
-    background: url("../img/pcb.png");
+    background: url("./img/pcb.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
-.visible {
-  opacity: 1;
-}
 
 .services-desc-title {
     height: auto;
@@ -600,9 +441,6 @@ a.login-button:hover .login-text,button.login-button:hover .login-text {
     text-align: left;
 }
 
-.grey-out {
-  opacity: 0.3;
-}
 
 .services-desc-title-text {
     font-family: 'SFPro Bold';
@@ -658,7 +496,7 @@ a.login-button:hover .login-text,button.login-button:hover .login-text {
   height:500px;
   width:45%;
   margin-right: 10px;
-  background-image: linear-gradient(rgba(0, 0, 0, 1),rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.0)),url("../img/latest_1.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 1),rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.0)),url("./img/latest_1.jpg");
   background-position: center;
   background-size: contain;
   display:inline-block;
@@ -673,16 +511,6 @@ a.login-button:hover .login-text,button.login-button:hover .login-text {
     transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
-.description-title-text{
-  font-family: "SFPro Bold";
-  margin-top: 10px;
-  font-size: 30px;
-}
-.description-desc-text{
-  font-family: "SFPro Regular";
-  margin-top: 10px;
-  font-size: 20px;
-}
 
 .content-title {
   width:100%;
@@ -706,7 +534,7 @@ a.login-button:hover .login-text,button.login-button:hover .login-text {
   height:500px;
   width:45%;
   margin-left: 10px;
-  background-image: linear-gradient(rgba(0, 0, 0, 1),rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.0)),url("../img/latest_2.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 1),rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.0)),url("./img/latest_2.jpg");
   background-position: center;
   background-size: cover;
   display:inline-block;
@@ -719,125 +547,29 @@ a.login-button:hover .login-text,button.login-button:hover .login-text {
 }
 
 .latest-content-1 {
-  background-image: linear-gradient(rgba(0, 0, 0, 1),rgba(0, 0, 0, 1),rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)),url("../img/creative_workshop_cover.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 1),rgba(0, 0, 0, 1),rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)),url("./img/creative_workshop_cover.jpg");
   background-position:top;
   background-size: cover;
 }
 
 .latest-content-2 {
-  background-image: linear-gradient(rgba(0, 0, 0, 1),rgba(0, 0, 0, 1),rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)),url("../img/latest_1.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 1),rgba(0, 0, 0, 1),rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)),url("./img/latest_1.jpg");
   background-position:top;
   background-size: cover;
 }
 
 .latest-content-3 {
-  background-image: linear-gradient(rgba(0, 0, 0, 1),rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)),url("../img/ceccommcamp.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 1),rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)),url("./img/ceccommcamp.jpg");
   background-position:top;
   background-size: cover;
 }
 
 .latest-content-4 {
-  background-image: linear-gradient(rgba(0, 0, 0, 1),rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)),url("../img/cec6th.jpeg");
+  background-image: linear-gradient(rgba(0, 0, 0, 1),rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)),url("./img/cec6th.jpeg");
   background-position:top;
   background-size: cover;
 }
 
-.footer-box {
-    height: 30%;
-    width: 100%;
-    background-color: #FFFFFF;
-    color: black;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 5;
-    text-align: center;
-    transform: translateY(233%);
-}
-.footer-address{
-  font-family: "SFPro Regular";
-  font-size: 15px;
-}
-
-.footer-box-container {
-    height: 80%;
-    width: 60%;
-    margin-top: 2%;
-    display:inline-block;
-    position: relative;
-
-}
-.links-container{
-  height: 100%;
-  width:calc(100%/3 - 2px);
-  display:inline-block;
-  text-align: left;
-  vertical-align: top;
-}
-
-.links-container a{
-  font-size: 15px;
-  font-family: "SFPro Regular";
-  font-weight: 400;
-  display:block;
-  text-decoration: none;
-  color:#5F5F5F;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  transition: transform .2s;
-}
-
-.links-container a:hover{
-  font-weight: 600;
-}
-
-.footer-ceclogo {
-  height:30px;
-  margin-bottom: 10px;
-}
-
-
-.invert {
-  -webkit-filter: invert(1);
-   filter: invert(1);
-}
-
-#snackbar {
-    visibility: hidden;
-    min-width: 250px;
-    margin-left: 25px;
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    border-radius: 5px;
-    padding: 16px;
-    position: fixed;
-    z-index: 9;
-    bottom: 30px;
-    font-size: 17px;
-}
-
-
-
-@-webkit-keyframes fadein {
-    from {bottom: 0; opacity: 0;}
-    to {bottom: 30px; opacity: 1;}
-}
-
-@keyframes fadein {
-    from {bottom: 0; opacity: 0;}
-    to {bottom: 30px; opacity: 1;}
-}
-
-@-webkit-keyframes fadeout {
-    from {bottom: 30px; opacity: 1;}
-    to {bottom: 0; opacity: 0;}
-}
-
-@keyframes fadeout {
-    from {bottom: 30px; opacity: 1;}
-    to {bottom: 0; opacity: 0;}
-}
 @media only screen and (max-width:620px) {
   /* For mobile phones: */
   .about-image, .about-menu,.achievements-left,.achievements-right,.contact-left,.contact-right {
