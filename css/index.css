@@ -869,6 +869,10 @@ a.login-button:hover .login-text,button.login-button:hover .login-text {
     height:100%;
   }
 
+  .goal-content-text{
+    width:80%;
+  }
+
   .footer-box {
       height: auto;
       transform:translateY(20%);
