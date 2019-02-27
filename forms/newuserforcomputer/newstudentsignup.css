@@ -1,8 +1,3 @@
-.fadeIn {
-    transition: 0.4s;
-    opacity: 1 !important;
-}
-
 .header {
     text-align: left;
     height: 15%;
@@ -41,7 +36,9 @@
 }
 
 .description {
+  min-height: 100%;
   height: auto;
+  top:-1px;
   width: 100%;
   text-align: center;
   background-color: #F7F7F7;
@@ -51,28 +48,57 @@
 
 .title-text {
   font-family: 'SFPro Semibold';
-  font-size: 6rem;
+  font-size: 60px;
   position: relative;
   top:50%;
   transform: translateY(-50%);
   display: inline-block;
-  color:#FFFFFF;
-  background-color: #FFFFFF;
-    background-image: none;
-    background-size: none;
-    -webkit-background-clip: none;
-    -webkit-text-fill-color: none;
+  LINE-HEIGHT: 50px;
 }
+
 .description-content {
   height:70%;
-  width: 60%;
+  width: 50%;
   display:inline-block;
   text-align: left;
 }
+.description-title-text{
+  font-family: "SFPro Bold";
+  margin-top: 10px;
+  font-size: 30px;
+  line-height: 33px;
+}
+.description-desc-text{
+  font-family: "SFPro Regular";
+  margin-top: 10px;
+  font-size: 20px;
+  LINE-HEIGHT: 25px;
+}
 
-@media only screen and (max-width:620px) {
+.hidden {
+  display:none;
+}
+
+@media only screen and (max-width:920px) {
   /* For mobile phones: */
   .description-content {
     width:90%;
   }
+  .title-text{
+    margin-top: 20px;
+    font-size: 50px;
+  }
+  .description-title-text {
+    font-size: 28px;
+  }
+  .description-desc-text {
+    font-size: 18px;
+  }
+  .list-title{
+    font-size: 22px;
+  }
+  .list-desc{
+    font-size: 19px;
+  }
+
 }
