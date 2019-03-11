@@ -630,4 +630,7 @@ a.login-button:hover .login-text,button.login-button:hover .login-text {
   .mobile {
     padding-left: 0;
   }
+  .about-menu-container{
+    padding-top: 30%;
+  }
 }
