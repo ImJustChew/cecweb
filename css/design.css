@@ -235,16 +235,16 @@ a.pill-button:hover .pill-text,button.pill-button:hover .pill-text {
 
 
 .footer-box {
-    height: 30%;
-    width: 100%;
-    background-color: #FFFFFF;
-    color: black;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 5;
-    text-align: center;
-    transform: translateY(233%);
+  height: auto;
+  width: 100%;
+  padding: 12px;
+  background-color: #FFFFFF;
+  color: black;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  text-align: center;
 }
 .footer-address{
   font-family: "SFPro Regular";
@@ -254,7 +254,6 @@ a.pill-button:hover .pill-text,button.pill-button:hover .pill-text {
 .footer-box-container {
     height: 80%;
     width: 60%;
-    margin-top: 2%;
     display:inline-block;
     position: relative;
 
@@ -284,7 +283,8 @@ a.pill-button:hover .pill-text,button.pill-button:hover .pill-text {
 }
 
 .footer-ceclogo {
-  height:30px;
+  width: 100px;
+  margin-top: 10px;
   margin-bottom: 10px;
 }
 
