@@ -52,9 +52,7 @@ a.login-button:hover .login-text,button.login-button:hover .login-text {
     background-color: #F5F5F5;
     z-index: 1;
     position: relative;
-    padding: 10px;
 }
-
 
 .latest {
   height:auto;
@@ -69,13 +67,6 @@ a.login-button:hover .login-text,button.login-button:hover .login-text {
   position: relative;
 }
 
-.home-color {
-  text-align: center;
-  background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8),rgba(0,0,0,0.6),rgba(0,0,0,0.4)),url("./img/cover.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size:cover;
-}
 
 .about-color {
   background-image: linear-gradient(black, #F5F6F6);
@@ -108,23 +99,30 @@ a.login-button:hover .login-text,button.login-button:hover .login-text {
     transform: translateY(-50%);
     text-align: center;
 }
-.home-content {
+.home-image {
   height: 100%;
   width: 100%;
   position: relative;
+  display:inline-block;
   top: 50%;
   transform: translateY(-50%);
   text-align: center;
+  background-image:url("./img/no_hand_gatai.jpg");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size:cover;
 }
 
 .home-content-box {
     height: auto;
     width: 100%;
-    position: relative;
+    position: absolute;
     top: 50%;
     transform: translateY(-50%);
     display: inline-block;
     text-align: center;
+    margin-left: 230px;
+    margin-top: 30px;
 }
 
 .home-title {
@@ -145,14 +143,14 @@ a.login-button:hover .login-text,button.login-button:hover .login-text {
     color: #FFFFFF;
 }
 
-.about-learn-more {
-  opacity: 0;
-}
 
 .about-image-box {
     height: 100%;
     width: 85%;
     display: inline-block;
+    position: relative;
+    top: 0;
+    left: 0;
 }
 
 .about-image {
@@ -179,16 +177,10 @@ a.login-button:hover .login-text,button.login-button:hover .login-text {
 }
 
 .about-history {
-    opacity: 0;
     font-family: 'SFPro Semibold';
     font-size: 4rem;
     padding: 1.5rem 0;
     transition: 0.3s;
-}
-
-.aboutmenuoptionactive {
-    transition: 0.3s;
-    opacity: 1;
 }
 
 .about-image-layers {
@@ -199,7 +191,7 @@ a.login-button:hover .login-text,button.login-button:hover .login-text {
     width: 100%;
 }
 
-.about-l3 {
+.about-logo {
     position: absolute;
     top: 0;
     left: 0;
@@ -208,7 +200,6 @@ a.login-button:hover .login-text,button.login-button:hover .login-text {
     color: black;
     background-color: transparent;
     z-index: 3;
-    opacity: 0;
     transition: 0.3s;
     background-image: url("./img/cec-robot.png");
     background-position: center;
@@ -507,10 +498,6 @@ a.login-button:hover .login-text,button.login-button:hover .login-text {
 
 
 
-.latest-content_left:hover {
-    transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-}
-
 
 .content-title {
   width:100%;
@@ -542,10 +529,6 @@ a.login-button:hover .login-text,button.login-button:hover .login-text {
   transition: transform .2s;
 }
 
-.latest-content_right:hover {
-    transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-}
-
 .latest-content-1 {
   background-image: linear-gradient(rgba(0, 0, 0, 1),rgba(0, 0, 0, 1),rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)),url("./img/creative_workshop_cover.jpg");
   background-position:top;
@@ -569,7 +552,36 @@ a.login-button:hover .login-text,button.login-button:hover .login-text {
   background-position:top;
   background-size: cover;
 }
+@media only screen and (max-width:1220px) {
+  .home-content-box{
+    margin-left: 160px;
+  }
 
+}
+@media only screen and (max-width:1060px) {
+  .home-content-box{
+    margin-left: 90px;
+  }
+
+}
+@media only screen and (max-width:940px) {
+  /* For mobile phones: */
+  .home-image {
+    background-position: 70%;
+  }
+  .achievements-left,.achievements-right {
+    width:100%;
+  }
+  .mobile {
+    padding-left: 0;
+  }
+  .about-menu-container{
+    padding-top: 30%;
+  }
+  .home-content-box{
+    margin-left: 0px;
+  }
+}
 @media only screen and (max-width:620px) {
   /* For mobile phones: */
   .about-image, .about-menu,.achievements-left,.achievements-right,.contact-left,.contact-right {
@@ -619,18 +631,5 @@ a.login-button:hover .login-text,button.login-button:hover .login-text {
   }
   .links-container a{
     font-size: 18px;
-  }
-}
-
-@media only screen and (max-width:940px) {
-  /* For mobile phones: */
-  .achievements-left,.achievements-right {
-    width:100%;
-  }
-  .mobile {
-    padding-left: 0;
-  }
-  .about-menu-container{
-    padding-top: 30%;
   }
 }
