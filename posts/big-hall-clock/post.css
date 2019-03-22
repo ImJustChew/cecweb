@@ -1,0 +1,11 @@
+.title {
+  height: 70%;
+  width: 100%;
+  text-align: center;
+  background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.4)),url("cover.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top,right;
+  z-index: 1;
+  position: relative;
+}
