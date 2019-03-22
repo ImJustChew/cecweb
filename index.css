@@ -17,10 +17,6 @@
     -webkit-transition: cubic-bezier(0.4, 0, 0.6, 1);
     transition: cubic-bezier(0.4, 0, 0.6, 1);
     cursor:pointer;
-    -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none; 
-  user-select: none;
 }
 
 .login-text{
@@ -115,6 +111,7 @@ a.login-button:hover .login-text,button.login-button:hover .login-text {
   background-position: center;
   background-repeat: no-repeat;
   background-size:cover;
+  filter: saturate(0.7);
 }
 
 .home-content-box {
