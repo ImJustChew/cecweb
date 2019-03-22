@@ -17,6 +17,10 @@
     -webkit-transition: cubic-bezier(0.4, 0, 0.6, 1);
     transition: cubic-bezier(0.4, 0, 0.6, 1);
     cursor:pointer;
+    -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none; 
+  user-select: none;
 }
 
 .login-text{
@@ -107,8 +111,8 @@ a.login-button:hover .login-text,button.login-button:hover .login-text {
   top: 50%;
   transform: translateY(-50%);
   text-align: center;
-  background-image:url("./img/no_hand_gatai.jpg");
-  background-position: right;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url("./img/hand_no_gatai_but_dissapointed.jpg");
+  background-position: center;
   background-repeat: no-repeat;
   background-size:cover;
 }
@@ -121,8 +125,6 @@ a.login-button:hover .login-text,button.login-button:hover .login-text {
     transform: translateY(-50%);
     display: inline-block;
     text-align: center;
-    margin-left: 230px;
-    margin-top: 30px;
 }
 
 .home-title {
@@ -552,18 +554,6 @@ a.login-button:hover .login-text,button.login-button:hover .login-text {
   background-position:top;
   background-size: cover;
 }
-@media only screen and (max-width:1220px) {
-  .home-content-box{
-    margin-left: 160px;
-  }
-
-}
-@media only screen and (max-width:1060px) {
-  .home-content-box{
-    margin-left: 90px;
-  }
-
-}
 @media only screen and (max-width:940px) {
   /* For mobile phones: */
   .home-image {
@@ -577,9 +567,6 @@ a.login-button:hover .login-text,button.login-button:hover .login-text {
   }
   .about-menu-container{
     padding-top: 30%;
-  }
-  .home-content-box{
-    margin-left: 0px;
   }
 }
 @media only screen and (max-width:620px) {
