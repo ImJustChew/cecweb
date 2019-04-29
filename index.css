@@ -221,7 +221,6 @@ a.login-button:hover .login-text,button.login-button:hover .login-text {
     width: 70%;
     position: relative;
     top: 50%;
-    transform: translateY(-50%);
     text-align: left;
 
 }
